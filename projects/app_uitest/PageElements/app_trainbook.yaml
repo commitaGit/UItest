@@ -1,0 +1,49 @@
+火车票产品: "xpath==//*[@text='火车']/.."
+因公: "xpath==//*[@text='checkmark circle']"
+因私: "xpath==//*[@text='//*[@text='radio button off']"
+出发站点: "xpath==//*[contains(@text, '出发站点')]"
+出发地搜索: "class==android.widget.EditText"
+出发地选择: "xpath==//android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]"
+到达站点: "xpath==//*[contains(@text, '到达站点')]"
+到达地搜索: "class==android.widget.EditText"
+到达地选择: "xpath==//android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]"
+日期: "xpath==//*[@resource-id='teh-home-content']/android.view.View/android.view.View/android.view.View[1]/android.view.View[6]"
+日期选择: "xpath==//*[@text='{0}']/.." #获取当前日期，如果小于24号，则加4天，大于等于24号，则下月1号
+
+# *** 日期难点
+查询: "xpath==//*[contains(@text, '查询')]"
+选中车次: "xpath==//*[@resource-id='teh-search-train-content']/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]" # 第一个车次
+预订按钮: "xpath==//*[contains(@text, '预订')]" # 确定可预订的座位数，点击第一个--如选中的车次无票可定，暂未解决
+预订: "xpath==//*[@text='特航预订']/following-sibling::android.view.View"
+
+# 添加乘机人页面
+选择乘客: "xpath==//android.widget.Button[contains(@text, '选择乘客')]"
+新增员工按钮: "xpath==//android.widget.Button[contains(@text, '新增员工')]"
+员工姓名: "xpath==//android.view.View/android.view.View[2]/android.view.View[1]/android.widget.EditText[1]"
+部门选择: "xpath==//*[@text='所属部门']/.."
+选中部门: "class==android.widget.RadioButton"  # --多级部门时，还需选择，不可行
+证件号: "xpath==//android.view.View/android.view.View[10]/android.view.View[1]/android.widget.EditText[1]"
+手机号: "xpath==//android.view.View/android.view.View[6]/android.view.View[1]/android.widget.EditText[1]"
+确定--添加员工: "xpath==//*[contains(@text, '确定')]"
+
+搜索员工: "class==android.widget.EditText"
+选中搜索员工: "xpath==//android.view.View[contains(@text,'{0}')]" # 搜索的员工姓名
+选中员工: "xpath==//*[@text='员工列表']/following-sibling::android.view.View"  #员工表中第一个
+去付款: "xpath==//android.widget.Button[contains(@text, '去付款')]"
+确认支付: "xpath==//android.widget.Button[contains(@text, '确认支付')]"
+授信支付: "xpath==//android.widget.Button[contains(@text, '支付')]"
+支付结果: "xpath==//android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View"
+查看订单: "xpath==//*[contains(@text, '查看订单')]"
+
+
+
+
+
+
+
+
+
+
+
+
+

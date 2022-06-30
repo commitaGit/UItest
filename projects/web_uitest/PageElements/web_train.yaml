@@ -1,0 +1,42 @@
+火车票: "xpath==//a[contains(text(),'火车票')]"
+因公: "xpath==//nz-card[1]/div[1]/div[1]/div[2]/span[1]"
+因私: "xpath==//nz-card[1]/div[1]/div[1]/div[2]/span[2]"
+出发地: "xpath==//input[@placeholder='支持中文/拼音检索']" # 第一个
+广州: "xpath==//span[contains(text(),'广州')]"
+到达地: "xpath==//input[@placeholder='支持中文/拼音检索']" # 第二个
+深圳: "xpath==//span[contains(text(),'深圳')]"
+日期: "xpath==//input[@placeholder='请选择日期']"
+日期选择: "xpath==//td[@title='{0}']"  # 随机生成后2-7天的日期
+搜索: "xpath==//search-ticket[1]/div[1]/div[1]/nz-card[1]/div[2]/nz-row[1]/button[1]"
+预订按钮: "xpath==//span[text()=' 预订 ']/.." # 若有disabled则不能点击
+
+# 填写订单页面
+姓名: "xpath==//input[@placeholder='姓名']"
+感应员工信息: "tag==nz-auto-option" # 选第一个
+直接预订: "xpath==//fill-order[1]/nz-spin[1]/div[1]/form[1]/div[1]/div[1]/div[1]/button[1]"
+
+授信支付: "xpath==//nz-tabset[1]/div[2]/div[1]/div[2]/button[1]"
+支付结果: "xpath==//div[@class='result__title']/div[1]"
+查看订单: "xpath==//result/div[4]/div[1]/button[1]"
+
+订单号: "xpath==//train-detail[1]//nz-card[1]//nz-col[1]/p[1]" # 公用
+订单状态: "xpath==//train-detail[1]//nz-card[1]//nz-col[2]//nz-col[2]/nz-row[1]/nz-col[2]/h1" # 公用
+改签: "xpath==//train-detail[1]//nz-card[1]//button[3]"  # 订单详情中的改签按钮
+往后一天: "xpath==//date-tab[1]/nz-tabset[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]" # 改签订单列表
+
+改签按钮: "xpath==//span[text()=' 改签 ']/.." # 若有disabled则不能点击
+确认改签: "xpath==//order-change[1]//nz-card[1]/div[2]/div[1]/div[3]/button[1]"
+改签支付: "xpath==//nz-tabset[1]/div[2]/div[1]/div[2]/button[1]"
+改签申请提交结果: "xpath==//order-change[1]/nz-spin[1]/div[1]/nz-card[1]/div[2]/div[1]/div[1]" # 改签申请已提交成功
+查看改签订单: "xpath==//order-change[1]//nz-card[1]/div[2]/div[1]/div[3]/button[1]"
+
+退票: "xpath==//train-detail[1]//nz-card[1]//button[2]" # 订单详情的退票按钮
+确认退票: "xpath==//order-return[1]//nz-card[1]/div[2]/div[1]/div[3]/button[1]"
+退票申请提交结果: "xpath==//order-return[1]/nz-spin[1]/div[1]/nz-card[1]/div[2]/div[1]/div[1]"
+查看退票订单: "xpath==//order-return[1]//nz-card[1]/div[2]/div[1]/div[3]/button[1]"
+
+
+
+
+
+

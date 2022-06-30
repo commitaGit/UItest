@@ -1,0 +1,31 @@
+订单处理: "xpath==//a[contains(text(), '订单处理')]"
+国内酒店: "xpath==//a[@href='/order/domestic-hotel/tasks']"
+订单号: "xpath==//input[@formcontrolname='orderNoLike']"
+查询: "xpath==//button[@type='submit']"
+
+第一行: "xpath==//tbody/tr[1]/td[2]" # 判断订单号是否有任务
+
+# 调出任务，调出任务后才可查看任务类型
+勾选框: "xpath==//thead/tr[1]/th[1]/label[1]"
+调出任务: "xpath==//span[contains(text(),'调出任务')]/.."
+确定: "xpath==//span[contains(text(),'确定')]/.."
+
+操作栏: "xpath==//tbody/tr[1]/td[11]/span[2]"
+操作: "xpath==//tbody/tr[1]/td[11]/span[2]/a"
+
+# 部分退订确认
+退订手续费: "xpath==//input[@placeholder='退订手续费']"
+付供应商手续费: "xpath==//input[@placeholder='付供应商手续费（成本）']"
+退订成功: "xpath==//span[text()=' 退订成功 ']/.."
+退订失败: "xpath==//span[contains(text(),'退订失败')]/.."
+
+# 订房
+供应商: "xpath==//nz-select[@formcontrolname='supplierObject']"
+千淘: "xpath==//div[contains(text(),'千淘')]/.."
+供应商支付方式: "xpath==//nz-select[@formcontrolname='supplierPaymentMode']"
+第一个支付方式: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[1]"
+供应商订单号: "xpath==//input[@formcontrolname='supplierOrderNo']"
+房间采购成本: "xpath==//input[@placeholder='房费']" # 有几个填几个（或填完第一个后面自动填充）
+订房成功: "xpath==//span[contains(text(),'订房成功')]/.."
+订房失败: "xpath==//span[contains(text(),'订房失败')]/.."
+确定: "xpath==//span[contains(text(),'确定')]/.."

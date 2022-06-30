@@ -1,0 +1,66 @@
+订单处理: "xpath==//a[contains(text(), '订单处理')]"
+国内机票: "xpath==//a[@href='/order/flight/task']"
+订单号: "name==orderNoLike"
+查询: "xpath==//domestic-flight-task[1]/form[1]/nz-row[1]/nz-col[2]/button[1]"
+
+第一行: "xpath==//tbody/tr[1]/td[2]" # 判断订单号是否有任务
+任务类型: "xpath==//tbody/tr[1]/td[12]/span[2]/span[1]"
+
+# 调出任务
+勾选框: "xpath==//thead/tr[1]/th[1]/label[1]"
+调出任务: "xpath==//span[contains(text(),'调出任务')]/.."
+确定: "xpath==//span[contains(text(),'确定')]/.."
+调出结果: "xpath==//body[1]/div[2]/div[4]/div[1]/nz-message-container[1]/div[1]/nz-message[1]/div[1]/div[1]/div[1]" # 调出任务成功
+
+操作: "xpath==//tbody/tr[1]/td[14]/span[2]/span[1]"
+
+# 改签--改签报价
+舱位代码: "xpath==//*[@formcontrolname='bunkCode']"
+第一个舱位: "xpath==//cdk-virtual-scroll-viewport/div[1]/nz-option-item[1]"
+实际改签原因: "xpath==//shared-dict-select[@formcontrolname='actualChangeReasonCode']/nz-select[1]"
+第一个原因: "xpath==//cdk-virtual-scroll-viewport/div[1]/nz-option-item[1]"
+改签手续费: "xpath==//input[@formcontrolname='changeTicketFee']"
+授信提交: "xpath==//span[contains(text(),'授信提交')]/.."
+
+# 改签--改签确认
+改签票号: "xpath==//input[@formcontrolname='ticketNo']"
+票补差价: "xpath==//input[@formcontrolname='ticketFeeCost']"
+确认改签手续费: "xpath==//input[@formcontrolname='changeTicketFeeCost']"
+改签供应商: "xpath==//nz-select[@formcontrolname='supplier']"
+改签-携程: "xpath==//div[contains(text(),'携程')]/.."
+改签-BSP: "xpath==//div[contains(text(),'BSP')]/.."
+改签支付方式: "xpath==//nz-select[@formcontrolname='supplierPaymentMode']"
+第一个支付方式: "xpath==//cdk-virtual-scroll-viewport/div[1]/nz-option-item[1]"
+改签交易流水号: "xpath==//input[@formcontrolname='supplierPaymentNo']"
+改签提交: "xpath==//span[contains(text(),'提交')]/.."
+
+# 出票
+票号: "xpath==//input[@formcontrolname='ticketNo']"
+供应商: "xpath==//nz-select[@formcontrolname='supplier']"
+去哪儿: "xpath==//div[contains(text(),'去哪儿')]/.." # 没有票号格式校验
+BSP: "xpath==//div[contains(text(),'BSP')]/.."
+交易流水号: "xpath==//input[@formcontrolname='supplierPaymentNo']"
+提交: "xpath==//span[contains(text(),'提交')]/.."
+
+# 退票
+实际退票原因: "xpath==//shared-dict-select[@formcontrolname='actualReturnReasonCode']/nz-select[1]"
+退票原因: "xpath==//cdk-virtual-scroll-viewport/div[1]/nz-option-item[1]"  # 第一个原因
+收取退票手续费: "xpath==//input[@formcontrolname='returnTicketFee']"
+付供应商退票手续费:  "xpath==//input[@formcontrolname='returnTicketFeeCost']"
+退票确认: "xpath==//span[contains(text(),'退票确认')]/.."
+
+提交结果: "xpath==//i[@type='check-circle']/span[1]" # 提交成功  --出票、改签报价、改签确认、退票
+
+# 改签报价/改签确认--取消改签
+取消改签: "xpath==//span[contains(text(),'取消改签')]/.."
+操作备注: "xpath==//nz-modal-container/div[1]/div[1]/div[1]/nz-row[2]/nz-form-control[1]/div[1]/div[1]/textarea[1]"
+确认: "xpath==//nz-modal-container[1]/div[1]/div[1]/div[2]/button[2]"
+改签取消: "xpath==//span[contains(text(),'改签取消')]/.."
+提交: "xpath==//span[contains(text(),'提交')]/.."
+
+# 退票取消
+退票取消: "xpath==//span[contains(text(),'退票取消')]/.."
+确定: "xpath==//span[contains(text(),'确定')]/.."
+
+
+

@@ -1,0 +1,50 @@
+机票产品: "xpath==//a[contains(text(),'国内机票')]"
+单程: "xpath==//span[contains(text(),'单程')]/preceding-sibling::span[1]"
+往返: "xpath==//span[contains(text(),'往返')]/preceding-sibling::span[1]"
+因公: "xpath==//th-travel-type-switch/div[1]/span[1]"
+因私: "xpath==//th-travel-type-switch/div[1]/span[2]"
+出发城市: "xpath==//input[@placeholder='支持中文/拼音检索 方向键选择']" # 第一个
+出发城市选择: "xpath==//nz-list[1]/nz-spin[1]/div[1]/div[1]/nz-list-item[1]"
+到达城市: "xpath==//input[@placeholder='支持中文/拼音检索 方向键选择']" # 第二个
+到达城市选择: "xpath==//nz-list[1]/nz-spin[1]/div[1]/div[1]/nz-list-item[1]"
+日期: "xpath==//input[@placeholder='请选择日期']" # 第一个
+下个月: "xpath==//*[@title='下个月 (翻页下键)']"
+日期选择: "xpath==//td[@title='{0}']"  # 随机生成日期
+查询: "xpath==//search-flight/div[1]/div[1]/nz-card[1]/div[2]/div[1]/button[1]"
+弹框确认: "xpath==//nz-modal-container//div[@class='close-btn ng-star-inserted']"
+预订: "xpath==//span[contains(text(),'预订')]/.." # 所有预订按钮，随机选一个
+选择去程: "xpath==//span[contains(text(),'选择去程')]/.." # 所有按钮，随机选一个
+选择返程: "xpath==//span[contains(text(),'选择返程')]/.." # 所有按钮，随机选一个
+
+# 进入添加乘机人页面
+姓名: "xpath==//input[@formcontrolname='passengerName']"
+第一个感应员工: "tag==nz-auto-option"
+身份证号: "xpath==//input[@formcontrolname='docNo']"
+费用部门: "xpath==//shared-department-select[1]/nz-tree-select[1]"
+选中部门: "xpath==//nz-tree[1]/div[2]/div[1]/div[1]/nz-tree-node[1]/nz-tree-node-title[1]" # 选中第一个部门
+阅读并接受: "xpath==//protocol[1]/nz-card[1]/div[1]/label[1]/span[1]/input[1]"
+
+提交订单: "xpath==//span[contains(text(), '提交订单')]/.."
+添加乘机人: "xpath==//span[contains(text(), '添加乘机人')]/.."
+
+订单提交结果: "xpath==//booking[1]/pay-container[1]//flight-payment[1]//nz-collapse[1]/nz-collapse-panel[1]/div[1]/span[1]"
+
+授信支付: "xpath==//credit-pay/div[2]/button[1]"
+
+支付结果: "xpath==//div[@class='result__title']/div[1]" # 订单支付完成
+
+我的商旅: "xpath==//a[contains(text(), '我的特航')]"
+国内机票第一个订单: "xpath==//tbody/tr[1]/td[1]/span[2]/nz-row[1]/a[1]"
+订单号: "xpath==//flight-order-details[1]/nz-card[1]/div[2]/nz-row[1]/nz-col[1]/div[1]/h3[1]"
+
+取消按钮: "xpath==//span[contains(text(), '取消')]/.."
+确定取消: "xpath==//span[contains(text(), '确定')]/.."
+订单状态: "xpath==//flight-order-details[1]/nz-card[1]/div[2]/nz-row[1]/nz-col[2]/sv-container[1]/div[1]/sv[2]/div[2]/span[1]"
+
+
+
+
+
+
+
+

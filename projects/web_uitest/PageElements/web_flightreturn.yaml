@@ -1,0 +1,14 @@
+我的商旅: "xpath==//a[contains(text(), '我的特航')]"
+退票按钮: "xpath==//a[contains(text(),'退票')]"  # 选第一个
+退票原因: "xpath==//refund-fill-options/nz-radio-group[1]/div[1]/label[1]/span[1]/span[1]" # 第一个原因
+下一步: "xpath==//*[contains(text(),'下一步')]/.."
+弹框确认: "xpath==//nz-modal-confirm-container[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[2]"
+申请提交状态: "xpath==//flight-order-refund[1]/nz-spin[1]/div[1]/nz-card[1]/div[2]/nz-card[2]/div[1]/nz-row[1]/div[1]" # 退票申请已提交
+订单号: "xpath==//tbody/tr[1]/td[4]"
+去程: "xpath==//input[@type='checkbox']"  # 第一个
+返程: "xpath==//input[@type='checkbox']"  # 第二个
+乘机人: "xpath==//input[@type='checkbox']"  # 有多个乘机人时，有多个
+订单详情: "xpath==//a[text()='{0}']"
+详情返程: "xpath==//div[contains(text(),'返程')]"
+
+

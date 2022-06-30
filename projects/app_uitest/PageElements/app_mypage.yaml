@@ -1,0 +1,44 @@
+#我的: "xpath==//android.view.View[@resource-id='tab-button-mine']/android.view.View[1]"
+我的: "xpath==//android.view.View[contains(@text, '我的')]"
+
+# 以下内容，需同一个账号有不同身份才有
+账号信息: "xpath==//android.view.View[@resource-id='account-content']/android.view.View[2]/android.view.View[3]"
+切换身份: "xpath==//android.view.View[@text='切换身份']"
+关闭: "xpath==//android.widget.Button"
+
+我的订单: "xpath==//android.view.View[contains(@text, '我的订单 全部订单')]"
+全部: "xpath==//android.widget.Button[contains(@text, '全部')]"
+待支付: "xpath==//android.widget.Button[contains(@text, '待支付')]"
+处理中: "xpath==//android.widget.Button[contains(@text, '处理中')]"
+待出行: "xpath==//android.widget.Button[contains(@text, '待出行')]"
+退款/取消: "xpath==//android.widget.Button[contains(@text, '退款/取消')]"
+订单列表: "xpath==//android.webkit.WebView[@text='特航商旅']/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[2]"
+
+联系客服: "xpath==//android.view.View[contains(@text, '联系客服')]"
+常用信息: "xpath==//android.view.View[contains(@text, '常用信息')]"
+旅客: "xpath==//android.widget.Button[contains(@text, '旅客')]"
+地址: "xpath==//android.widget.Button[contains(@text, '地址')]"
+发票: "xpath==//android.widget.Button[contains(@text, '发票')]"
+
+关于我们: "xpath==//android.view.View[contains(@text, '关于我们')]"
+用户须知: "xpath==//android.view.View[contains(@text, '用户须知')]"
+关于本服务许可: "xpath==//android.view.View[contains(@text, '关于本服务许可')]"
+服务协议: "xpath==//android.view.View[contains(@text, '服务协议')]"
+用户服务协议: "xpath==//android.view.View[contains(@text, '用户服务协议')]"
+隐私政策: "xpath==//android.view.View[contains(@text, '隐私政策')]"
+适用范围: "xpath==//android.view.View[contains(@text, '适用范围')]"
+
+积分: "xpath==//android.view.View[contains(@text, '积分')]"
+积分规则: "xpath==//android.view.View[@text='rule']"
+积分能为我带来什么: "xpath==//android.view.View[contains(@text,'1. 积分能为我带来什么？')]"
+如何获取更多积分: "xpath==//android.view.View[contains(@text, '2. 如何获取更多积分？')]"
+
+设置: "xpath==//android.view.View[contains(@text, '设置')]"
+我的信息: "xpath==//android.view.View[contains(@text, '我的信息')]"
+重置密码: "xpath==//android.view.View[contains(@text, '重置密码')]"
+绑定手机: "xpath==//android.view.View[contains(@text, '绑定手机')]"
+清除缓存: "xpath==//android.view.View[contains(@text, '清除缓存')]"
+
+左上角返回: "xpath==//android.widget.Button[contains(@text, 'chevron back outline')]"
+
+

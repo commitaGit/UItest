@@ -1,0 +1,19 @@
+我的: "xpath==//*[contains(@text,'我的')]"
+
+改签: "xpath==//android.widget.Button[contains(@text,'改签')]"
+选乘机人: "class==android.widget.CheckBox"
+下一步: "xpath==//*[contains(@text,'下一步')]"
+出发时间: "xpath==//*[contains(@text,'请选择出发时间')]"
+选中出发时间: "xpath==//*[@text='28']/.." # 选第二个11（或其他日期，可随机生成一个日期数字选择）
+查询: "xpath==//*[contains(@text, '查询')]"
+选中航班: "xpath==//*[@resource-id='teh-search-flight-content']/android.view.View/android.view.View/android.view.View[1]/android.view.View"
+改签按钮: "xpath==//*[@resource-id='teh-flight-info']/android.view.View/android.view.View[7]/android.view.View" # 预订第一个
+确认改签: "xpath==//*[contains(@text,'确认改签')]" # 授信无需支付操作
+返回首页: "xpath==//*[contains(@text, '返回首页')]"
+查看订单: "xpath==//*[contains(@text, '查看订单')]"
+订单状态: "xpath==//*[@resource-id='teh-order-details-body']/android.view.View[1]/android.view.View[1]/android.view.View[1]"
+
+
+
+
+

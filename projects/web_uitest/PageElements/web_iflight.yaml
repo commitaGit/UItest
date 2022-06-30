@@ -1,0 +1,73 @@
+国际机票: "xpath==//a[contains(text(), '国际∙港澳台机票')]"
+因公: "xpath==//span[contains(text(),'因公')]"
+因私: "xpath==//span[contains(text(),'因私')]"
+出发地: "xpath==//input[@placeholder='支持中文/拼音检索']" # 第一个
+出发地选择: "xpath==//div[@class='cdk-overlay-connected-position-bounding-box']/div[1]"
+国际/地区热门: "xpath==//div[contains(text(),'国际/地区热门')]"
+香港: "xpath==//span[contains(text(),'香港')]/.."
+到达地: "xpath==//input[@placeholder='支持中文/拼音检索']" # 第二个
+到达地选择: "xpath==//div[@class='cdk-overlay-connected-position-bounding-box']/div[1]"
+新加坡: "xpath==//span[contains(text(),'新加坡')]/.."
+出发日期: "xpath==//input[@placeholder='请选择日期']" # 第一个
+下个月: "xpath==//*[@title='下个月 (翻页下键)']"
+日期选择: "xpath==//div[text()=' {0} ']"  # 随机生成后n天的日期
+查询: "xpath==//int-flight-search[1]/div[1]/div[1]/nz-card[1]/div[2]/div[1]/button[1]"
+
+预订: "xpath==//span[contains(text(),'预订')]/.."  # 可随机预订或预订第一个
+
+# 填写乘机人页面
+姓: "xpath==//input[@placeholder='姓 Last Name']"
+选中员工: "xpath==//div[@class='cdk-overlay-connected-position-bounding-box']/div[1]"
+名: "xpath==//input[@placeholder='名 First Name']"
+证件号: "xpath==//input[@placeholder='证件号']"
+证件有效期: "xpath==//input[@placeholder='证件有效期']"
+下一年: "xpath==//a[@title='下一年 (Control键加右方向键)']"
+选中有效期: "xpath==//tbody/tr[2]/td[4]"
+国籍: "xpath==//shared-dict-select[@formcontrolname='countryCode']/nz-select"
+中国大陆: "xpath==//li[contains(text(),'中国大陆')]"
+国籍选择: "xpath==//body/div[2]/div[5]/div[1]/div[1]/div[1]/ul[1]/li" # 有n个，可随机选一个
+出生日期: "xpath==//input[@placeholder='请选择日期']"
+上一年: "xpath==//a[@title='上一年 (Control键加左方向键)']"
+选中出生日期: "xpath==//tbody/tr[3]/td[4]"
+手机号: "xpath==//input[@formcontrolname='mobile']"
+男: "xpath==//span[text()='男']/../span[1]"
+女: "xpath==//span[text()='女']/../span[1]"
+费用部门: "xpath==//div[contains(text(),'请选择部门')]"
+选中部门: "xpath==//nz-tree[1]/ul[1]/nz-tree-node[1]/li[1]/span[2]" # 选中第一个部门
+提交订单: "xpath==//span[contains(text(), '提交订单')]/.."
+
+支付页面订单号: "xpath==//nz-table-inner-default[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]"
+
+授信支付: "xpath==//pay-center[1]//nz-tabset[1]/div[1]/div[1]/div[1]/div[2]/button[1]"
+支付结果: "xpath==//div[@class='result__title']/div[1]" # 订单支付完成
+订单号: "xpath==//int-flight-order-detail[1]//nz-card[1]//nz-col[1]/nz-row[1]/nz-col[1]/p[1]"  # 授权后校验订单状态
+
+我的特航: "xpath==//a[contains(text(), '我的特航')]"
+国际机票订单列表: "xpath==//a[@href='/user/orders/intflight']"
+第一个订单号: "xpath==//tbody/tr[1]/td[1]/span[2]/a[1]"
+点击订单号: "xpath==//a[contains(text(),'{0}')]" # {0}替换为具体的订单号
+
+# 改签申请
+改签: "xpath==//a[contains(text(), '改签')]" # 随便点击一个
+选择日期: "xpath==//input[@placeholder='请选择日期']"
+改签下个月: "xpath==//button[@title='下个月 (翻页下键)']"
+具体日期选中: "xpath==//div[text()=' {0} ']" # 也随机生成日期
+提交改签申请: "xpath==//span[contains(text(), '提交改签申请')]/.."
+确认提交改签申请: "xpath==//span[contains(text(), '确认提交改签申请')]/.."
+改签申请提交结果: "xpath==//result/div[2]" # 提交改签申请成功
+
+# 退票申请
+退票: "xpath==//a[contains(text(), '退票')]" # 随便点击一个
+退票类型: "class==ant-radio" # 第一个自愿、第二个非自愿
+提交退票申请: "xpath==//span[contains(text(), '提交退票申请')]/.."
+确认提交退票申请: "xpath==//span[contains(text(), '确认提交退票申请')]/.."
+退票申请提交结果: "xpath==//result/div[2]" # 提交退票申请成功
+
+# 订单详情取消订单
+取消: "xpath==//span[contains(text(), '取消')]/.."
+取消确认: "xpath==//span[contains(text(), '确定')]/.."
+
+
+
+
+

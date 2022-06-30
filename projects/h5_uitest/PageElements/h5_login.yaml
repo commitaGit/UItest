@@ -1,0 +1,10 @@
+跳过: "tag==ion-label"
+弹框: "tag==ion-backdrop"
+同意: "xpath==//div[contains(text(),'同意')]"  #最后一个
+账号密码登录: "xpath==//ion-button[contains(text(),'账号密码登录')]"
+手机号: "tag==input"  # 第一个
+密码: "tag==input"  # 第二个
+#协议: "tag==ion-icon" # 第二个
+协议: "xpath==//app-mobile-login[1]/ion-footer[1]/ion-toolbar[1]/div[1]/div[3]/ion-icon[1]" # 第二个
+登录: "xpath==//app-mobile-login[1]/ion-content[1]/ion-grid[1]/ion-row[3]/ion-col[1]/ion-button[1]"
+问候语: "xpath==//ion-label[contains(text(),'您好!')]"

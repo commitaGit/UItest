@@ -1,0 +1,90 @@
+订单处理: "xpath==//a[contains(text(), '订单处理')]"
+国际机票需求: "xpath==//a[@href='/order/intflight/requirement']"
+国际机票处理: "xpath==//a[@href='/order/intflight/task']"
+订单号: "xpath==//input[@formcontrolname='bigOrderNoLike']"
+查询: "xpath==//button[@type='submit']"
+第一行: "xpath==//tbody/tr[1]/td[2]" # 判断订单号是否有任务
+
+需求类型:  "xpath==//tbody/tr[1]/td[11]/span[2]/span[1]"
+任务类型:  "xpath==//tbody/tr[1]/td[12]/span[2]/span[1]"
+
+# 调出任务
+勾选框: "xpath==//thead/tr[1]/th[1]/label[1]"
+调出任务: "xpath==//span[contains(text(),'调出任务')]/.."
+调出确定: "xpath==//span[contains(text(),'确定')]/.."
+调出结果: "xpath==//body[1]/div[2]/div[4]/div[1]/nz-message-container[1]/div[1]/nz-message[1]/div[1]/div[1]/div[1]" # 调出任务成功
+
+需求操作: "xpath==//tbody/tr[1]/td[12]/span[2]"
+任务操作: "xpath==//tbody/tr[1]/td[14]/span[2]"
+
+# 出票申请--需求
+提交出票申请: "xpath==//span[contains(text(),'提交出票申请')]/.."
+
+# 出票--处理
+票号: "xpath==//input[@formcontrolname='ticketNo']"
+供应商: "xpath==//nz-select[@formcontrolname='supplier']"
+携程: "xpath==//div[contains(text(),'携程')]/.."
+BSP: "xpath==//div[contains(text(),'BSP')]/.."
+供应商支付方式: "xpath==//nz-select[@formcontrolname='supplierPaymentMode']"
+出票第一个支付方式: "xpath==//cdk-virtual-scroll-viewport/div[1]/nz-option-item[1]"
+供应商订单号: "xpath==//input[@formcontrolname='supplierOrderNo']"
+交易流水号: "xpath==//input[@formcontrolname='supplierPaymentNo']"
+确认出票: "xpath==//span[contains(text(),'确认出票')]/.."
+
+# 改签申请--需求
+实际改签原因: "xpath==//change-reason//nz-select"
+第一个改签原因: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[1]"
+票价补差: "xpath==//nz-input-number[@formcontrolname='ticketFee']/div[2]/input"
+税费补差: "xpath==//nz-input-number[@formcontrolname='tax']/div[2]/input"
+改签手续费: "xpath==//nz-input-number[@formcontrolname='changeTicketFee']/div[2]/input"
+误机费: "xpath==//nz-input-number[@formcontrolname='flightMissedFee']/div[2]/input"
+退票政策: "xpath==//*[@formcontrolname='returnPolicyDesc']"
+改签政策: "xpath==//*[@formcontrolname='changePolicyDesc']"
+改签支付: "xpath==//span[contains(text(),'改签支付')]/.."
+确定: "xpath==//span[contains(text(),'确定')]/.."
+改签取消: "xpath==//span[contains(text(),'改签取消')]/.."
+
+# 改签确认--任务
+改签票号: "xpath==//input[@formcontrolname='ticketNo']"
+票补差价: "xpath==//nz-input-number[@formcontrolname='ticketFee']/div[2]/input"
+税费差价: "xpath==//nz-input-number[@formcontrolname='tax']/div[2]/input"
+改签费: "xpath==//nz-input-number[@formcontrolname='changeTicketFee']/div[2]/input"
+改签误机费: "xpath==//nz-input-number[@formcontrolname='flightMissedFee']/div[2]/input"
+改签供应商: "xpath==//nz-select[@formcontrolname='supplier']"
+改签-携程: "xpath==//div[contains(text(),'携程')]/.."
+改签-BSP: "xpath==//div[contains(text(),'BSP')]/.."
+改签支付方式: "xpath==//nz-select[@formcontrolname='supplierPaymentMode']"
+改签第一个支付方式: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[1]"
+改签供应商订单号: "xpath==//input[@formcontrolname='supplierPaymentNo']"
+改签交易流水号: "xpath==//input[@formcontrolname='supplierOrderNo']"
+改签确认: "xpath==//span[contains(text(),'改签确认')]/.."
+
+# 退票申请--需求
+实际退票原因: "xpath==//*[@dicttype='FlightReturnReason']//nz-select"
+第一个退票原因: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[1]" # 第一个原因
+票面退款: "xpath==//nz-input-number[@formcontrolname='ticketFee']/div[2]/input"
+税费退款: "xpath==//nz-input-number[@formcontrolname='tax']/div[2]/input"
+退票手续费: "xpath==//nz-input-number[@formcontrolname='returnTicketFee']/div[2]/input"
+客户留款: "xpath==//nz-input-number[@formcontrolname='customerReservedAmount']/div[2]/input"
+确认退票: "xpath==//span[contains(text(),'确认退票')]/.."
+退票取消: "xpath==//span[contains(text(),'退票取消')]/.."
+退票确定: "xpath==//span[contains(text(),'确定')]/.."
+
+# 退票--处理
+退票费: "xpath==//nz-input-number[@formcontrolname='returnTicketFee']/div[2]/input"
+退票误机费: "xpath==//nz-input-number[@formcontrolname='flightMissedFee']/div[2]/input"
+退票供应商订单号: "xpath==//input[@formcontrolname='supplierOrderNo']"
+退票交易流水号: "xpath==//input[@formcontrolname='supplierPaymentNo']"
+退票确认: "xpath==//span[contains(text(),'退票确认')]/.."
+
+# 申请废票--需求
+申请废票: "xpath==//input[@type='checkbox']"
+废票费: "xpath==//input[@class='ant-input-number-input ng-pristine ng-valid ng-touched']"
+确认废票: "xpath==//span[contains(text(),'确认废票')]/.."
+
+# 废票--处理
+废票: "xpath==//input[@formcontrolname='supplierOrderNo']"
+废票确认: "xpath==//span[contains(text(),'废票确认')]/.."
+
+# 取消--需求
+取消确认: "xpath==//span[contains(text(), '取消确认')]/.."

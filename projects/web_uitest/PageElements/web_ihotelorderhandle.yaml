@@ -1,0 +1,40 @@
+订单处理: "xpath==//a[contains(text(), '订单处理')]"
+国际酒店: "xpath==//a[@href='/order/int-hotel/tasks']"
+
+锁单: "xpath==//a[text()='锁单']"
+
+全部任务: "xpath==//int-hotel-tasks[1]/locked-list[1]/nz-card[1]/div[2]/div[1]/a[2]"
+
+订单号: "xpath==//input[@formcontrolname='orderNoLike']"
+查询: "xpath==//button[@type='submit']"
+
+第一行: "xpath==//tbody/tr[2]" # 判断订单号是否有任务
+
+任务类型: "xpath==//tbody/tr[1]/td[7]/span[2]/a"
+
+# 调出任务
+勾选框: "xpath==//thead/tr[1]/th[1]/label[1]"
+调出任务: "xpath==//span[contains(text(),'调出任务')]/.."
+调出确定: "xpath==//span[contains(text(),'确定')]/.."
+
+操作: "xpath==//tbody/tr[1]/td[7]/span[2]/a"
+
+# 订房
+供应商: "xpath==//nz-select[@formcontrolname='supplier']"
+第一个供应商: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[1]"
+供应商支付方式: "xpath==//nz-select[@formcontrolname='supplierPaymentMode']"
+第一个支付方式: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[1]"
+供应商订单号: "xpath==//input[@formcontrolname='supplierOrderNo']"
+供应商交易流水号: "xpath==//input[@formcontrolname='supplierPaymentNo']"
+房间成本: "xpath==//input[@nzplaceholder='房费']"  # 多个房间则有多个
+订房成功: "xpath==//span[contains(text(),'订房成功')]/.."
+提交结果: "xpath==//div[contains(@class, 'ant-message-custom-content')]/span[1]" # 订房成功
+
+# 退房
+退订手续费: "xpath==//input[@placeholder='退订手续费']"  # 多个房间则有多个
+付供应商手续费（成本）: "xpath==//input[@placeholder='付供应商手续费（成本）']"  # 多个房间则有多个
+客户留款: "xpath==//input[@placeholder='客户留款（成本）']"  # 多个房间则有多个
+确认: "xpath==//span[contains(text(),'确认')]/.."
+退订结果: "xpath==//nz-message-container//nz-message/div[1]/div[1]/div[1]/span[1]" # 处理退订任务成功
+
+

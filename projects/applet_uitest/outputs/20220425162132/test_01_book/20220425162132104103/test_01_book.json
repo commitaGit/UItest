@@ -1,0 +1,288 @@
+{
+    "case_name": "test_01_book",
+    "run_time": "20220425 16:21:32",
+    "test_type": "DomesticHotelTest",
+    "case_doc": "\u5c0f\u7a0b\u5e8f--\u56fd\u5185\u9152\u5e97-\u9884\u8ba2\u9152\u5e97",
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1650874892.1080084,
+    "is_failure": false,
+    "is_error": false,
+    "module": "C:.\u5de5\u4f5c.09-UITEST.test-uitest.projects.applet-uitest.TestCase.test_02_domestic_hotel",
+    "package": "test_02_domestic_hotel",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "model": "iPhone XR",
+            "pixelRatio": 2,
+            "windowWidth": 414,
+            "windowHeight": 808,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 414,
+            "screenHeight": 896,
+            "SDKVersion": "2.23.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 99,
+            "statusBarHeight": 44,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 414,
+                "bottom": 862,
+                "width": 414,
+                "height": 818
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 2,
+            "mode": "default"
+        }
+    },
+    "log_filename": "test_01_book.log",
+    "error_type": "",
+    "error_value": "",
+    "error_stages": [],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/app/pages/home/home",
+            "path": "images\\setup.png",
+            "ts": 1650874892,
+            "datetime": "2022-04-25 16:21:32"
+        },
+        {
+            "name": "teardown",
+            "url": "/app/pages/hotel-order-detail/hotel-order-detail",
+            "path": "images\\teardown.png",
+            "ts": 1650874982,
+            "datetime": "2022-04-25 16:23:02"
+        }
+    ],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "page_data": {
+        "invoiceStatusIcon": {
+            "Cancelled": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/invoice/cancelled.png",
+            "Issued": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/invoice/issued.png",
+            "Reverse": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/invoice/reverse.png",
+            "Submitted": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/invoice/wait-issue.png",
+            "WaitIssue": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/invoice/wait-issue.png"
+        },
+        "orderTravelTypeImage": {
+            "OnBusiness": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/common/order-business.png",
+            "OnPrivate": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/common/order-private.png"
+        },
+        "hotelContractImg": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/hotel-contract.png",
+        "returnGuests": [],
+        "showRoomDetailPopup": false,
+        "showGuestList": true,
+        "showReturnGuestList": true,
+        "checkInDateAlias": "\u540e\u5929",
+        "checkOutDateAlias": "\u5468\u4e94",
+        "canBookAgain": true,
+        "isLoading": false,
+        "loadingTitle": "",
+        "isSK": false,
+        "backToFirstPage": true,
+        "orderDetail": {
+            "id": "487296639787208704",
+            "bigOrderNo": "310017211",
+            "orderSource": "Normal",
+            "travelType": "OnBusiness",
+            "status": "WaitTicket",
+            "paymentStatus": "PreBilled",
+            "createTime": "2022-04-25T08:22:52.537Z",
+            "paymentAmount": "564",
+            "payMode": "CorpCredit",
+            "bookingEmployeeName": "\u81ea\u52a8\u5316\u4e00",
+            "bookingTime": "2022-04-25T08:22:52.532Z",
+            "checkInDate": "2022-04-27",
+            "checkOutDate": "2022-04-29",
+            "latestArrivalTime": "23:59",
+            "roomsCount": 1,
+            "days": 2,
+            "fee": {
+                "bookRoomFee": "564",
+                "bookServiceFee": "0",
+                "bookTrusteeFee": "0",
+                "purchaseAgentFee": "0",
+                "returnRoomFee": "0",
+                "returnHandingFee": "0",
+                "returnServiceFee": "0",
+                "returnTrusteeFee": "0",
+                "totalServiceFee": "0",
+                "totalTrusteeFee": "0",
+                "totalRoomFee": "564",
+                "totalBookFee": "564",
+                "totalReturnFee": "0",
+                "paymentAmount": "564",
+                "returnFees": null,
+                "configBookTrusteeFee": null,
+                "configBookTrusteeChargeType": null
+            },
+            "specialNotes": null,
+            "hotel": {
+                "name": "\u6df1\u5733\u5a01\u5361\u6f2b\u9152\u5e97",
+                "address": "\u7ca4\u6d77\u8857\u9053\u9ad8\u65b0\u533a\u793e\u533a\u9ad8\u65b0\u5357\u4e00\u9053013\u53f7\u8d4b\u5b89\u79d1\u6280\u5927\u697cA\u680b1\u5c42",
+                "contactTel": "0755-89960766",
+                "hotelUrl": null,
+                "cityCode": "4403",
+                "cityName": "\u6df1\u5733",
+                "latitude": "22.544126",
+                "longitude": "113.958098",
+                "hotelCode": "411324029556117506",
+                "hotelPayType": "PrePay",
+                "roomInfo": {
+                    "roomCode": "130688574_14",
+                    "roomName": "\u8377\u98ce\u5927\u5e8a\u623f",
+                    "ratePlanName": "\u5927\u5e8a\uff08\u65e0\u65e9\uff09",
+                    "bedType": "\u5927\u5e8a",
+                    "windowType": "\u65e0\u7a97",
+                    "breakfast": "\u65e0\u65e9",
+                    "rule": "2022-04-27 18:00:00\u524d\u53ef\u514d\u8d39\u9000\u8ba2",
+                    "floor": "5",
+                    "wifi": null,
+                    "area": "20-25",
+                    "pictures": [],
+                    "facilities": [],
+                    "wasContractPrice": false
+                },
+                "priceSource": "\u7f51\u91d1\u793e"
+            },
+            "guests": [
+                {
+                    "subOrderId": "487296639829151746",
+                    "status": "WaitTicket",
+                    "paymentStatus": "PreBilled",
+                    "guestName": "\u81ea\u52a8\u5316\u4e00",
+                    "docType": null,
+                    "docNo": "",
+                    "birthday": null,
+                    "gender": null,
+                    "mobile": "12345671234",
+                    "email": "12345671234@tehang.com",
+                    "belongedDeptName": "\u603b\u90e8",
+                    "projectName": null,
+                    "approvalId": null,
+                    "approvalNo": null,
+                    "approvalStatus": "None",
+                    "approvalInfo": {
+                        "id": null,
+                        "approvalNo": null,
+                        "approvalStatus": "None",
+                        "approvalHis": null
+                    },
+                    "feeInfo": {
+                        "bookRoomFee": "564",
+                        "bookServiceFee": "0",
+                        "bookTrusteeFee": "0",
+                        "purchaseAgentFee": "0",
+                        "returnRoomFee": "0",
+                        "returnHandingFee": "0",
+                        "returnServiceFee": "0",
+                        "returnTrusteeFee": "0",
+                        "totalServiceFee": "0",
+                        "totalTrusteeFee": "0",
+                        "totalRoomFee": "564",
+                        "totalBookFee": "564",
+                        "totalReturnFee": "0",
+                        "paymentAmount": "564",
+                        "returnFees": [],
+                        "configBookTrusteeFee": null,
+                        "configBookTrusteeChargeType": null
+                    },
+                    "dayInfos": [
+                        {
+                            "id": "f823065f-ea45-4890-beb1-0ec99658f663",
+                            "begin": "2022-04-27",
+                            "end": "2022-04-28",
+                            "roomFee": "282",
+                            "status": "Submitted"
+                        },
+                        {
+                            "id": "e86248bb-20ee-453c-9240-a991eab11217",
+                            "begin": "2022-04-28",
+                            "end": "2022-04-29",
+                            "roomFee": "282",
+                            "status": "Submitted"
+                        }
+                    ],
+                    "overrun": {
+                        "overrunEnable": false,
+                        "wasOver": false,
+                        "overrunOption": null,
+                        "overPriceReasonText": null,
+                        "dayMaxPrice": "0",
+                        "totalOverPrice": "0",
+                        "employeeRankId": "d47c244e-87e3-4763-81c8-26adc8bbc838",
+                        "employeeRankName": "\u666e\u901a\u5458\u5de5",
+                        "cityLevelId": "1",
+                        "cityLevelName": "\u4e00\u7ebf\u57ce\u5e02",
+                        "authorizeStatus": "None",
+                        "authorizeId": "",
+                        "authorizeHis": null
+                    },
+                    "hotelOrderOperation": {
+                        "canBePaid": false,
+                        "canBeCanceled": true,
+                        "canBeReturned": false,
+                        "canApplyInvoice": false
+                    }
+                }
+            ],
+            "returnRecords": [],
+            "contactInfo": {
+                "name": "\u81ea\u52a8\u5316\u4e00",
+                "mobile": "12345671234",
+                "email": "12345671234@tehang.com"
+            },
+            "needInvoice": false,
+            "invoice": null,
+            "hotelOrderOperation": {
+                "canBePaid": false,
+                "canBeCanceled": true,
+                "canBeReturned": false,
+                "canApplyInvoice": false
+            },
+            "payments": [],
+            "refunds": [],
+            "guarantee": {
+                "needGuarantee": false,
+                "guaranteeType": null,
+                "amount": null
+            },
+            "customizeFieldName": null,
+            "customizeData": null
+        }
+    },
+    "stop_timestamp": 1650874982.4338763,
+    "appId": "wx1f3cd17c40631ec7",
+    "appName": "\u7279\u822a\u5546\u65c5\u7279\u4ef7\u9152\u5e97",
+    "source": {
+        "code": [
+            "    @CaseDependency(name=\"test_01_book\")\n",
+            "    def test_01_book(self):\n",
+            "        \"\"\"\u5c0f\u7a0b\u5e8f--\u56fd\u5185\u9152\u5e97-\u9884\u8ba2\u9152\u5e97\"\"\"\n",
+            "        global ORDER_ID\n",
+            "        ORDER_ID = self.hotel_page.book_hotel()\n"
+        ],
+        "start": 54
+    },
+    "filename": "test_01_book.json"
+}

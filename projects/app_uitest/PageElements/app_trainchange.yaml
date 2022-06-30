@@ -1,0 +1,17 @@
+我的: "xpath==//*[contains(@text,'我的')]"
+
+改签按钮: "xpath==//android.widget.Button[contains(@text,'改签')]"
+确认改签按钮: "xpath==//android.widget.Button[contains(@text,'确认改签')]" # 授信无需支付操作
+选中车次: "xpath==//*[@resource-id='teh-search-train-content']/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]"
+改签: "xpath==//*[contains(@text,'改签')]" # 改签第一个可改签座位类型
+确定: "xpath==//android.widget.Button[contains(@text,'确定')]"
+确认支付: "xpath==//android.widget.Button[contains(@text,'确认支付')]"
+授信支付: "xpath==//android.widget.Button[contains(@text,'支付')]"
+
+返回首页: "xpath==//*[contains(@text, '返回首页')]"
+查看订单: "xpath==//*[contains(@text, '查看订单')]"
+改签申请状态: "xpath==//android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View"
+改签完成: "xpath==//android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.view.View"
+
+
+

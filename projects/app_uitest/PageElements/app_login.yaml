@@ -1,0 +1,13 @@
+跳过: "xpath==//*[contains(@text, '跳过')]"
+同意: "xpath==//android.view.View[@text='同意']"
+账号密码登录: "xpath==//*[contains(@text, '账号密码')]" # 有三个按钮，定位到后点击第三个
+手机号: "class==android.widget.EditText"  # 密码输入框的class也是这个值，查找到两个元素，再操作第一个元素输入账号
+密码: "class==android.widget.EditText"  # 手机号输入框的class也是这个值，查找到两个元素，再操作第一个元素输入密码
+显示密码: "class==android.widget.Image"
+协议: "xpath==//android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Image[1]"
+登录: "xpath==//*[contains(@text, '登录')]"
+验证码登录: "xpath==//*[@text='手机验证码登录']"
+个人注册: "xpath==//*[@text='普通个人注册']"
+公务员注册: "xpath==//*[@text='公务员注册']"
+首页: "xpath==//*[contains(@text, '首页')]"
+

@@ -1,0 +1,110 @@
+{
+    "case_name": "test_05_partial_return_apply",
+    "run_time": "20220425 16:23:34",
+    "test_type": "DomesticHotelTest",
+    "case_doc": "\u5c0f\u7a0b\u5e8f-\u56fd\u5185\u9152\u5e97--\u63d0\u4ea4\u90e8\u5206\u9000\u623f\u7533\u8bf7",
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1650875014.7382424,
+    "is_failure": false,
+    "is_error": false,
+    "module": "C:.\u5de5\u4f5c.09-UITEST.test-uitest.projects.applet-uitest.TestCase.test_02_domestic_hotel",
+    "package": "test_02_domestic_hotel",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "model": "iPhone XR",
+            "pixelRatio": 2,
+            "windowWidth": 414,
+            "windowHeight": 808,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 414,
+            "screenHeight": 896,
+            "SDKVersion": "2.23.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 99,
+            "statusBarHeight": 44,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 414,
+                "bottom": 862,
+                "width": 414,
+                "height": 818
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 2,
+            "mode": "default"
+        }
+    },
+    "log_filename": "test_05_partial_return_apply.log",
+    "error_type": "",
+    "error_value": "",
+    "error_stages": [],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/app/pages/home/home",
+            "path": "images\\setup.png",
+            "ts": 1650875015,
+            "datetime": "2022-04-25 16:23:35"
+        },
+        {
+            "name": "teardown",
+            "url": "/app/pages/common/order-operate-result/order-operate-result",
+            "path": "images\\teardown.png",
+            "ts": 1650875129,
+            "datetime": "2022-04-25 16:25:29"
+        }
+    ],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "page_data": {
+        "OSSPrefix": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp",
+        "resultTypeImageOps": {
+            "success": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/pay/pay-success.png",
+            "failed": "https://tehang-assets.oss-cn-shenzhen.aliyuncs.com/weapp/pay/pay-fail.png"
+        },
+        "props": {
+            "type": "success",
+            "title": "\u9000\u8ba2\u7533\u8bf7",
+            "result": "\u63d0\u4ea4\u6210\u529f",
+            "description": "\u9000\u8ba2\u7533\u8bf7\u5df2\u63d0\u4ea4\u6210\u529f\uff0c\u8bf7\u7559\u610f\u90ae\u4ef6\u77ed\u4fe1\u901a\u77e5"
+        },
+        "orderId": "487297143556673536"
+    },
+    "stop_timestamp": 1650875129.7219927,
+    "appId": "wx1f3cd17c40631ec7",
+    "appName": "\u7279\u822a\u5546\u65c5\u7279\u4ef7\u9152\u5e97",
+    "source": {
+        "code": [
+            "    @CaseDependency(name=\"test_05_partial_return_apply\", depend=\"test_01_book\")\n",
+            "    def test_05_partial_return_apply(self):\n",
+            "        \"\"\"\u5c0f\u7a0b\u5e8f-\u56fd\u5185\u9152\u5e97--\u63d0\u4ea4\u90e8\u5206\u9000\u623f\u7533\u8bf7\"\"\"\n",
+            "        logger.info(\"\u63d0\u4ea4\u90e8\u5206\u9000\u623f\u7533\u8bf7\")\n",
+            "        global ORDER_ID\n",
+            "        ORDER_ID = self.hotel_page.book_hotel()\n",
+            "        assert self.reservation_confirmation(ORDER_ID), \"\u5b8c\u6210\u8ba2\u623f\u4efb\u52a1\u5931\u8d25\"\n",
+            "        assert self.hotel_page.partial_return(), \"\u63d0\u4ea4\u90e8\u5206\u9000\u623f\u7533\u8bf7\u5931\u8d25\"\n"
+        ],
+        "start": 78
+    },
+    "filename": "test_05_partial_return_apply.json"
+}

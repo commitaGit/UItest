@@ -1,0 +1,73 @@
+机票产品: "xpath==//*[@text='机票']/.."
+单程: "xpath==//*[@text='单程']"
+往返: "xpath==//*[@text='往返']"
+因公: "xpath==//*[@text='checkmark circle']"
+因私: "xpath==//*[@text='//*[@text='radio button off']"
+出发城市: "xpath==//*[@resource-id='teh-flight-content']/android.view.View/android.view.View/android.view.View/android.view.View[5]"
+出发城市搜索: "class==android.widget.EditText"
+出发城市选择: "xpath==//android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]"
+到达城市: "xpath==//*[@resource-id='teh-flight-content']/android.view.View/android.view.View/android.view.View/android.view.View[7]"
+到达城市搜索: "class==android.widget.EditText"
+到达城市选择: "xpath==//android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]"
+日期: "xpath==//*[@resource-id='teh-flight-content']/android.view.View/android.view.View/android.view.View/android.view.View[8]"
+日期选择: "xpath==//*[@text='30']/.."  # 选第二个30（或其他日期，可随机生成一个日期数字选择）
+查询: "class==android.widget.Button"
+选中航班: "xpath==//*[@resource-id='teh-search-flight-content']/android.view.View/android.view.View/android.view.View[1]/android.view.View"
+预订按钮: "xpath==//*[@resource-id='teh-flight-info']/android.view.View/android.view.View[7]/android.view.View" # 预订第一个
+
+
+# 进入添加乘机人页面
+添加乘机人: "xpath==//android.widget.Button[contains(@text, '+添加乘机人')]"
+选中员工: "xpath==//*[@text='员工列表']/following-sibling::android.view.View"  # 选中员工列表中的第一个
+# 新增员工页面
+新增员工按钮: "xpath==//android.widget.Button[contains(@text, '新增员工')]"
+员工姓名: "xpath==//android.view.View/android.view.View[2]/android.view.View[1]/android.widget.EditText[1]"
+部门选择: "xpath==//*[@text='所属部门']/.."
+选中部门: "xpath==//*[@text='总部']/.."  # --多级部门时，还需选择，不可行
+证件类型: "xpath==//android.view.View/android.view.View[8]/android.view.View[1]/android.widget.Button[1]"
+回乡证: "xpath==//*[@text='回乡证']"
+确定--证件类型: "xpath==//*[@class='android.app.Dialog']/android.view.View[2]/android.widget.Button[2]"
+证件号: "xpath==//android.view.View/android.view.View[10]/android.view.View[1]/android.widget.EditText[1]"
+出生日期: "class==android.widget.Button " # 第三个
+确定--出生日期: "xpath==//*[contains(@text, '确定')]"  # 第二个
+性别: "class==android.widget.Button " # 第四个
+确定--添加员工: "xpath==//*[contains(@text, '确定')]"
+
+# 进入修改乘机人信息页面
+修改乘机人信息: "xpath==//*[@resource-id='android:id/content']//android.view.View[2]/android.view.View/android.view.View[4]"
+证件下拉框: "class==android.widget.Button" # 3个按钮，点击第二个
+护照: "xpath==//*[@text='护照']"
+身份证: "xpath==//*[@text='身份证']"
+证件类型确定: "xpath==//*[@class='android.app.Dialog']/android.view.View[2]/android.widget.Button[2]"
+证件号码: "class==android.widget.EditText" # 3个输入框，第二个
+出生日期: "class==android.widget.Button" # 5个按钮，点击第3个---证件类型不是身份证才是
+年份选择: "xpath==//*[@text='2021']"   # 定位到2021，再滑动到其他年份
+性别: "class==android.widget.Button" # 5个按钮，点击第4个
+女: "xpath==//*[@text='女']"
+男: "xpath==//*[@text='男']"
+确定: "xpath==//*[@text='确定']"
+# 填写乘机人页面
+报销凭证: "class==android.widget.Button" # 第三个
+邮寄地址: "class==android.widget.Image" # 只选中一个乘机人时，该元素有6个则未勾选，7个则勾选了--判断是否点击报销凭证按钮
+阅读并接受: "xpath==//*[@text='阅读并接受']/preceding-sibling::android.widget.CheckBox/android.widget.Button"
+去付款: "xpath==//*[contains(@text, '去付款')]"
+继续下单: "xpath==//*[contains(@text, '继续下单')]" # 重复订单提醒
+支付: "xpath==//*[contains(@text, '支付')]"
+授信支付: "xpath==//*[@class='android.app.Dialog']/android.view.View/android.view.View[5]"
+支付结果: "xpath==//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.view.View[1]"
+查看订单: "xpath==//*[contains(@text, '查看订单')]"
+订单号: "xpath==//android.view.View[contains(@text, '订单号')]"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

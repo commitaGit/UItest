@@ -1,0 +1,63 @@
+机票产品: "xpath==//ion-text[contains(text(),'机票')]/.."
+单程: "xpath==//ion-label[contains(text(),'单程')]"
+往返: "xpath==//ion-label[contains(text(),'往返')]"
+出发城市: "xpath==//app-flight-home[1]/ion-content[1]/div[1]/ion-grid[1]/ion-row[2]/ion-col[1]"
+城市输入: "xpath==//ion-header/div[1]/ion-toolbar[1]/app-amos-search-bar[1]/div[1]/form[1]/ion-input[1]/input[1]"
+第一个城市: "xpath==//app-tabs[1]//app-airports[1]/ion-content[1]/ion-virtual-scroll[1]/ion-item[1]/ion-label[2]"
+到达城市: "xpath==//app-flight-home[1]/ion-content[1]/div[1]/ion-grid[1]/ion-row[2]/ion-col[3]"
+日历: "xpath==//app-flight-home[1]//ion-grid[1]/ion-row[3]/ion-col[1]/ion-text[1]/div[1]"
+日期选择: "xpath==//ion-virtual-scroll[1]/ion-item[2]//ion-grid[1]/ion-row[1]/ion-col[17]"
+去程日期: "xpath==//ion-virtual-scroll[1]/ion-item[2]/app-calendar-month[1]/ion-grid[1]/ion-row[1]/ion-col[15]"
+返程日期: "xpath==//ion-virtual-scroll[1]/ion-item[2]/app-calendar-month[1]/ion-grid[1]/ion-row[1]/ion-col[18]"
+查询: "xpath==//ion-button[contains(text(),'查询')]"
+第一个航班: "xpath==//app-flight-list[1]/ion-content[1]/div[1]/ion-virtual-scroll[1]/ion-item[1]/app-flight-list-item[1]/div[1]/ion-grid[1]"
+返程第一个航班: "xpath==//app-flight-list[2]//ion-virtual-scroll[1]/ion-item[1]/app-flight-list-item[1]/div[1]/ion-grid[1]"
+返程第一个舱位: "xpath==//app-flight-bunk-list[2]/ion-content[1]/app-bunk-list-item[1]/ion-grid[1]/ion-row[1]/ion-col[2]/div[1]"
+第一个舱位: "xpath==//app-bunk-list-item[1]/ion-grid[1]/ion-row[1]/ion-col[2]/div[1]"
+第二个舱位: "xpath==//app-bunk-list-item[2]/ion-grid[1]/ion-row[1]/ion-col[2]/div[1]"
+预订按钮: "xpath==//ion-label[contains(text(), '预订')]/.."
+添加乘机人: "xpath==//ion-button[contains(text(),'+添加乘机人')]"
+新增员工: "xpath==//ion-button[contains(text(),'+ 新增员工')]"
+姓名: "xpath==//app-employee-info-editor[1]//form[1]/ion-grid[1]/ion-row[1]/ion-col[2]/ion-input[1]/input[1]"
+部门: "xpath==//app-employee-info-editor[1]/ion-content[1]/form[1]/ion-grid[1]/ion-row[2]/ion-col[3]"
+总部: "xpath==//ion-label[contains(text(),'总部')]"
+部门确定: "xpath==//div[contains(text(),'确定')]"
+身份证号: "xpath==//input[@placeholder='请填写证件编号']"
+添加确定: "xpath==//ion-button[contains(text(),'确定')]"
+协议: "xpath==//input[@type='hidden']"
+去付款: "xpath==//ion-button[contains(text(),'去付款')]"
+明细: "xpath==//app-flight-pay-order[1]/ion-footer[1]/ion-toolbar[1]/ion-grid[1]/ion-row[1]/ion-col[2]/ion-button[1]" # 有明细说明生成订单成功
+支付: "xpath==//ion-button[contains(text(),'支付')]"
+支付结果: "tag==p" # 第一个
+查看订单: "xpath==//ion-button[contains(text(),'查看订单')]"
+订单号: "xpath==//ion-label[contains(text(),'订单号：')]"
+订单状态: "xpath==//app-order-detail[1]/ion-content[1]/ion-card[1]/ion-grid[1]/ion-row[1]/ion-col[1]"
+详情左上角返回: "xpath==//app-order-detail[1]//ion-toolbar[1]/app-custom-back-button[1]/ion-buttons[1]/ion-button[1]"
+
+我的: "xpath==//ion-tab-button[@id='tab-button-mine']"
+全部订单: "xpath==//page-person[1]/ion-content[1]/ion-grid[1]/ion-card[1]/ion-grid[1]/ion-row[1]/ion-col[2]"
+列表已出票订单: "xpath==//ion-label[contains(text(),'已出票')]"
+列表多状态订单: "xpath==//ion-label[contains(text(),'多状态')]"
+列表待确认订单: "xpath==//ion-label[contains(text(),'待确认')]"
+第二个订单状态: "xpath==//app-order-list[1]//div[3]/app-flight-order-item[1]//ion-col[3]/div[2]/ion-label[1]"
+改签: "xpath==//ion-button[contains(text(),'改签')]"
+乘机人勾选: "tag==ion-checkbox"
+下一步: "xpath==//ion-button[contains(text(),'下一步')]"
+选择出发时间: "xpath==//ion-label[contains(text(),'请选择出发时间')]"
+改签按钮: "xpath==//ion-label[contains(text(),'改签')]"
+确认改签按钮: "xpath==//ion-button[contains(text(),'确认改签')]"
+退/改签结果: "xpath==//p[contains(text(),'成功提交')]"
+取消按钮: "xpath==//ion-button[contains(text(),'取消')]"
+取消确定: "xpath==//span[contains(text(),'确定')]/.."
+退票: "xpath==//ion-button[contains(text(),'退票')]"
+退票去程: "xpath==//app-select-route[1]/ion-content[1]/ion-grid[1]/ion-row[1]/ion-col[2]/img[1]"
+退票返程: "xpath==//app-select-route[1]/ion-content[1]/ion-grid[1]/ion-row[3]/ion-col[2]/img[1]"
+
+
+
+
+
+
+
+
+

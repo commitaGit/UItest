@@ -1,0 +1,51 @@
+运营管理: "xpath==//a[contains(text(), '运营管理')]"
+商旅事业部: "xpath==//a[contains(@href,'/operation/tmc/corp')]"
+新增按钮: "xpath==//span[contains(text(),'新增 ')]/.."
+
+# 基础信息
+客户类型: "xpath==//*[@dicttype='CorpType']"
+TMC: "xpath==//*[contains(text(),'TMC')]"
+GP机构: "xpath==//*[contains(text(),'GP')]"
+客户全称: "xpath==//input[@formcontrolname='nameCn']"
+客户简称: "xpath==//input[@formcontrolname='shortName']"
+会员号: "xpath==//input[@formcontrolname='code']"
+客户规模: "xpath==//*[@dicttype='CorpSize']"
+具体规模: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[n]" # 使用时需将li[n]中的n替换为具体数字 1-4
+业务状态: "xpath==//*[@dicttype='CorpBizStatus']"
+具体状态: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[n]"# 使用时需将li[n]中的n替换为具体数字 1-3
+所属行业: "xpath==//*[@dicttype='CorpIndustry']"
+具体行业: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[n]" # 使用时需将li[n]中的n替换为具体数字 1-13
+信用等级: "xpath==//*[@dicttype='CorpCreditRating']"
+具体等级: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[n]" # 使用时需将li[n]中的n替换为具体数字 1-3
+客户地址: "xpath==//*[@formcontrolname='location']"
+省: "xpath==//body/div[2]/div[2]/div[1]/div[1]/ul[1]/li[n]" # 使用时需将li[n]中的n替换为具体数字
+市: "xpath==//body/div[2]/div[2]/div[1]/div[1]/ul[2]/li[1]" # 因市的数量不固定，最少只有1个，先都取第一个
+区: "xpath==//body/div[2]/div[2]/div[1]/div[1]/ul[3]/li[n]" # 因区的数量不固定，最少只有3个，先都取1-3
+详细地址: "xpath==//input[@formcontrolname='address']"
+
+# 服务信息
+销售经理: "xpath==//*[@formcontrolname='salesStaffs']"
+可选销售经理: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[n]" # 使用时需将li[n]中的n替换为具体数字
+客服经理: "xpath==//*[@formcontrolname='customerStaffs']"
+可选客服经理: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[n]"# 使用时需将li[n]中的n替换为具体数字
+结算经理: "xpath==//*[@formcontrolname='settlementStaffs']"
+可选结算经理: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[n]"# 使用时需将li[n]中的n替换为具体数字
+维护经理: "xpath==//*[@formcontrolname='maintainStaffs']"
+可选维护经理: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[n]" # 使用时需将li[n]中的n替换为具体数字
+
+# 联系人信息
+联系人姓名: "xpath==//*[@formcontrolname='contactName']"
+联系人手机: "xpath==//*[@formcontrolname='mobile']"
+联系人邮箱: "xpath==//*[@formcontrolname='email']"
+
+# 开通产品
+开通产品: "xpath==//product-info[1]//nz-select[1]"
+产品数量: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item"
+可选产品: "xpath==//cdk-virtual-scroll-viewport[1]/div[1]/nz-option-item[n]" # 使用时需将li[n]中的n替换为具体数字 1-8
+
+保存: "xpath==//button[@class='mx-lg px-lg ant-btn ant-btn-primary ant-btn-lg ng-star-inserted']"
+返回列表: "xpath==//button[@class='mx-lg px-lg ant-btn ant-btn-default ant-btn-lg']"
+
+获取机构名: "xpath==//h1[@class='page-header__title ng-star-inserted']"
+
+

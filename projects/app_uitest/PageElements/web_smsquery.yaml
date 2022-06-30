@@ -1,0 +1,9 @@
+订单处理: "xpath==//a[contains(text(), '订单处理')]"
+信息查询: "xpath==//a[@href='/order/message-platform/message-search']"
+短信查询: "xpath==//div[@class='ant-tabs-tab ant-tabs-tab-active ng-star-inserted']"
+查询按钮: "xpath==//span[contains(text(), '查询')]/.."
+手机号列: "xpath==//tr[n]//td[6]"  # 默认一页显示10条，第5列是手机号
+订单号列: "xpath==//tr[n]//td[3]"  # 默认一页显示10条，第3列是订单号
+发送场景列: "xpath==//tr[n]//td[4]" # 默认一页显示10条，第4列是发送场景
+内容详情列: "xpath==//tr[n]//td[7]//span[2]//span[1]" # 默认一页显示10条，第7列是发送内容
+短信内容: "xpath==//span[@class='text-volcano ng-star-inserted']"

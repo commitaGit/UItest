@@ -1,0 +1,7 @@
+退票: "xpath==//android.widget.Button[contains(@text,'退票')]"
+确认退票: "xpath==//android.widget.Button[contains(@text,'确认退票')]"
+确定: "xpath==//android.widget.Button[contains(@text,'确定')]"
+退票申请状态: "xpath==//android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View"
+返回首页: "xpath==//*[contains(@text,'返回首页')]"
+查看订单: "xpath==//*[contains(@text,'查看订单')]"
+

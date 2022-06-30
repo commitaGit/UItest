@@ -1,0 +1,19 @@
+我的商旅: "xpath==//a[contains(text(), '我的特航')]"
+改签按钮: "xpath==//a[contains(text(),'改签')]"  # 选第一个
+下一步: "xpath==//*[contains(text(),'下一步')]/.."
+日期: "xpath==//change-choose-flight[1]/nz-card[1]/div[2]/nz-row[1]/nz-date-picker[1]"
+下个月: "xpath==//*[@title='下个月 (翻页下键)']"
+日期选择: "xpath==//div[text()=' {0} ']" # 随机生成日期
+搜索按钮: "xpath==//change-choose-flight[1]/nz-card[1]/div[2]/nz-row[1]/button[1]"
+改签:  "xpath==//change-choose-flight[1]//nz-collapse[1]//flight-bunks-list[1]/flight-bunk-item[1]/nz-row[1]/nz-col[6]/button[1]"  # 第一个航班第一个可改签舱位
+确认改签: "xpath==//span[contains(text(), '确认改签')]/.."
+授信支付: "xpath==//credit-pay[1]/div[2]/button[1]"
+申请提交状态: "xpath==//flight-order-change[1]//change-completion[1]/nz-card[1]/div[1]/nz-row[1]/div[1]" # 改签申请已提交
+查看订单: "xpath==//button[@class='ant-btn ant-btn-primary']"
+订单号: "xpath==//flight-order-details[1]/nz-card[1]/div[2]/nz-row[1]/nz-col[1]/div[1]/h3[1]"
+支付结果: "xpath==//agent-flight-order-change/nz-spin[1]/div[1]/nz-card[1]/div[2]/success[1]/nz-card[1]/div[1]/result[1]/div[2]/div[1]"
+
+
+
+
+

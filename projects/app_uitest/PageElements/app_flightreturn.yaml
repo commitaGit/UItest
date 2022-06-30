@@ -1,0 +1,10 @@
+首页: "xpath==//*[contains(@text,'首页')]"
+返回: "xpath==//android.widget.Button[@text='arrow back']"
+退票: "xpath==//android.widget.Button[contains(@text,'退票')]"
+选乘机人: "class==android.widget.CheckBox"
+下一步: "xpath==//*[contains(@text,'下一步')]"
+返回首页: "xpath==//*[contains(@text,'返回首页')]"
+查看订单: "xpath==//*[contains(@text,'查看订单')]"
+订单状态: "xpath==//*[@resource-id='teh-order-details-body']/android.view.View[1]/android.view.View[1]/android.view.View[1]"
+
+

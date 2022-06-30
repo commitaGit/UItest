@@ -1,0 +1,9 @@
+我的商旅: "xpath==//a[contains(text(), '我的特航')]"
+我的计划: "xpath==//sidebar/ul[1]/li[2]"
+我的申请: "xpath==//a[contains(text(),'我的申请')]"
+审批单号: "name==approvalNoLike"
+查询: "xpath==//app-plan-approval[1]/nz-spin[1]/div[1]/nz-card[1]/div[2]/form[1]/nz-row[2]/nz-col[2]/button[1]"
+审批详情: "xpath==//a[contains(@href,'/user/plan/approval/detail')]" # 只考虑只有一个人的出差审批单
+一级审批状态: "xpath==//tbody/tr[1]/td[3]/span[2]/span[1]"
+二级审批状态: "xpath==//tbody/tr[3]/td[3]/span[2]/span[1]"
+

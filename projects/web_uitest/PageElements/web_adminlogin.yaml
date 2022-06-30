@@ -1,0 +1,5 @@
+账号: "xpath==//input[@placeholder='请输入手机号或邮箱']"
+密码: "xpath==//input[@placeholder='请输入密码']"
+登录按钮: "xpath==//button[@class='width-100 ant-btn ant-btn-primary ant-btn-lg']"
+标签栏: "xpath==//layout-header//li[1]/a[1]"
+

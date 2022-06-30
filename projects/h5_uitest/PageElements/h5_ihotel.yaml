@@ -1,0 +1,59 @@
+酒店产品: "xpath==//ion-text[contains(text(),'酒店')]/.."
+国际酒店: "xpath==//ion-label[contains(text(),'国际·港澳台')]/.."
+目的地: "xpath==//app-int-hotel-search[1]/ion-row[3]/ion-col[1]"
+城市输入: "xpath==//ion-header/div[1]/ion-toolbar[1]/app-amos-search-bar[1]/div[1]/form[1]/ion-input[1]/input[1]"
+第一个城市: "xpath==//app-int-city-list[1]/ion-content[1]/app-int-city-search-list[1]/ion-grid[1]/ion-row[1]"
+日期选择: "xpath==//app-int-hotel-search[1]/ion-row[4]/ion-col[1]/ion-label[1]"
+入住日期: "xpath==//ion-virtual-scroll[1]/ion-item[2]/app-calendar-month[1]/ion-grid[1]/ion-row[1]/ion-col[9]"
+离店日期: "xpath==//ion-virtual-scroll[1]/ion-item[2]/app-calendar-month[1]/ion-grid[1]/ion-row[1]/ion-col[11]"
+每间入住人数: "xpath==//app-int-hotel-search[1]/ion-row[5]/ion-col[1]"
+确定: "xpath==//ion-button[contains(text(),'确定')]" # 最后一个
+查询: "xpath==//ion-button[contains(text(),'查询')]"
+第一个酒店: "xpath==//app-tabs[1]//app-int-hotel-list-item[1]/ion-grid[1]/ion-row[1]"
+房型数量: "tag==app-int-hotel-room"
+房型展开: "xpath==//app-int-hotel-detail[1]//app-int-hotel-room[{0}]/ion-grid[1]/ion-row[1]"
+可预订数量: "xpath==//app-int-hotel-detail[1]//app-int-hotel-room[{0}]/app-int-hotel-room-plan"
+退订规则: "xpath==//app-int-hotel-detail[1]//app-int-hotel-room[{0}]/app-int-hotel-room-plan[{1}]//ion-col[1]/ion-label[1]/ion-text[1]"
+预订按钮: "xpath==//app-int-hotel-detail[1]//app-int-hotel-room[{0}]/app-int-hotel-room-plan[{1}]//ion-button[1]"
+
+# 填写订单页面
+入住人: "xpath==//ion-label[contains(text(),'请选择入住人')]"
+员工搜索: "xpath==//input[@placeholder='搜索']"
+第一个员工: "xpath==//app-int-hotel-employee-picker[1]/ion-content[1]/ion-list[1]/ion-item[1]/ion-label[1]"
+提交订单: "xpath==//ion-button[contains(text(),'提交订单')]"
+提交结果: "xpath==//ion-label[contains(text(),'订单支付')]"  # 需要支付则已提交成功
+支付: "xpath==//ion-button[contains(text(),'支付')]"
+支付成功: "xpath==//div[contains(text(),'支付成功')]"
+查看订单: "xpath==//ion-button[contains(text(),'查看订单')]"
+订单号: "xpath==//ion-label[contains(text(),'订单号：')]"
+
+# 退订流程
+我的: "xpath==//ion-tab-button[@id='tab-button-mine']"
+全部订单: "xpath==//page-person[1]/ion-content[1]/ion-grid[1]/ion-card[1]/ion-grid[1]/ion-row[1]/ion-col[2]"
+列表已确认订单: "xpath==//ion-label[contains(text(),'已确认')]"
+列表待付款订单: "xpath==//ion-label[contains(text(),'待付款')]"
+退订: "xpath==//ion-button[contains(text(),'退订')]"
+修改退订信息: "xpath==//ion-label[contains(text(),'修改退订信息')]"
+第一个日期: "xpath==//app-int-hotel-refund-part-selection[1]/ion-content[1]/ion-grid[1]/app-int-hotel-guest-row[1]/ion-row[1]"
+下一步: "xpath==//ion-button[contains(text(),'下一步')]"
+确定退订: "xpath==//ion-button[contains(text(),'确定退订')]"
+确认退订: "xpath==//ion-button[contains(text(),'确认退订')]"
+退订成功: "xpath==//div[contains(text(),'退订成功')]" # 提交成功则显示此文案
+取消订单: "xpath==//ion-button[contains(text(),'取消订单')]"
+确认取消: "xpath==//ion-alert[1]/div[2]/div[3]/button[1]"
+订单状态: "xpath==//app-int-hotel-order-detail[1]/ion-content[1]/ion-grid[1]/ion-row[1]/ion-col[1]/ion-label[1]"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

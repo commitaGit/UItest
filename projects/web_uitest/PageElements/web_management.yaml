@@ -1,0 +1,95 @@
+商旅管理: "xpath==//a[contains(text(), '商旅管理')]"
+
+出差设置: "xpath==//sidebar/ul[1]/li[2]/div[1]"
+差旅政策: "xpath==//a[contains(text(),'差旅政策')]"
+差旅政策名称: "xpath==//thead/tr[1]/th[1]"
+基础差标政策: "xpath==//span[contains(text(),'基础差标政策')]"
+
+预订设置: "xpath==//span[contains(text(),'预订设置')]/.."
+自定义字段: "xpath==//label[contains(text(),'自定义字段')]"
+国内机票设置: "xpath==//div[contains(text(),'国内机票设置')]/.."
+机票行程限制: "xpath==//label[contains(text(),'机票行程限制')]"
+员工自愿购买保险: "xpath==//label[contains(text(),'员工自愿购买保险')]"  # 两个，国内机票和火车票
+退票需要填写原因: "xpath==//label[contains(text(),'退票需要填写原因')]" # 两个，国内机票和国际机票
+改签需要填写原因: "xpath==//label[contains(text(),'改签需要填写原因')]" # 两个，国内机票和国际机票
+火车票设置: "xpath==//div[contains(text(),'火车票设置')]/.."
+国际·港澳台机票设置: "xpath==//div[contains(text(),'国际·港澳台机票设置')]/.."
+返回: "xpath==//span[contains(text(),'返回')]/.."
+
+新增差旅政策: "xpath==//span[contains(text(),'新增差旅政策')]/.."
+国内机票设置: "xpath==//div[contains(text(),'国内机票设置')]/.."
+国内酒店政策: "xpath==//div[contains(text(),'国内酒店政策')]/.."
+启用: "xpath==//span[contains(text(),'启用')]/.." # 两个，国内机票和国内酒店
+价格限制: "xpath==//span[contains(text(),'需预订同航线')]"
+时间限制: "xpath==//span[contains(text(),'需提前')]"
+折扣限制: "xpath==//span[contains(text(),'折扣不可超过')]"
+舱等限制: "xpath==//span[contains(text(),'不可预订公务/头等舱')]"
+起飞时间限制: "xpath==//span[contains(text(),'航班起飞时间限制')]"
+补充说明: "xpath==//label[contains(text(),'补充说明')]"
+一线城市: "xpath==//*[contains(text(),'一线城市')]"
+二线城市: "xpath==//*[contains(text(),'二线城市')]"
+三线城市: "xpath==//*[contains(text(),'三线城市')]"
+四线城市: "xpath==//*[contains(text(),'四线城市')]"
+其他城市: "xpath==//*[contains(text(),'其他城市')]"
+去设置城市等级: "xpath==//a[contains(text(),'去设置城市等级')]"
+
+
+事前审批设置: "xpath==//a[contains(text(), '事前审批设置')]"
+无需审批的员工: "xpath==//span[contains(text(), '无需审批的员工')]"
+基础审批政策: "xpath==//span[contains(text(), '基础审批政策')]"
+设置审批规则: "xpath==//span[contains(text(), '设置审批规则')]/.."
+
+新增审批流程: "xpath==//span[contains(text(), '新增审批流程')]/.."
+个人审批流程: "xpath==//span[contains(text(),'个人审批流程')]"
+部门审批流程: "xpath==//span[contains(text(),'部门审批流程')]"
+审批关闭: "class==ant-modal-close-x" # 第二个，共两个
+
+事中授权设置: "xpath==//a[contains(text(), '事中授权设置')]"
+无需授权的员工: "xpath==//span[contains(text(), '无需授权的员工')]"
+基础授权政策: "xpath==//span[contains(text(), '基础授权政策')]"
+设置授权规则: "xpath==//span[contains(text(), '设置授权规则')]/.."
+
+新增授权流程: "xpath==//span[contains(text(), '新增授权流程')]/.."
+个人授权流程: "xpath==//span[contains(text(),'个人授权流程')]"
+项目授权流程: "xpath==//span[contains(text(),'项目授权流程')]"
+部门授权流程: "xpath==//span[contains(text(),'部门授权流程')]"
+授权关闭: "class==ant-modal-close-x" # 第二个，共两个
+
+
+事后知会设置: "xpath==//a[contains(text(), '事后知会设置')]"
+无需知会的员工: "xpath==//span[contains(text(), '无需知会的员工')]"
+基础知会政策: "xpath==//span[contains(text(), '基础知会政策')]"
+设置知会规则: "xpath==//span[contains(text(), '设置知会规则')]/.."
+开启知会流程: "xpath==//label[contains(text(),'开启知会流程')]"
+知会关闭1: "class==ant-modal-close-x" # 第一个
+
+新增知会流程: "xpath==//span[contains(text(), '新增知会流程')]/.."
+个人知会流程: "xpath==//span[contains(text(),'个人知会流程')]"
+项目知会流程: "xpath==//span[contains(text(),'项目知会流程')]"
+部门知会流程: "xpath==//span[contains(text(),'部门知会流程')]"
+知会关闭: "class==ant-modal-close-x" # 第二个，共两个
+
+
+企业项目: "xpath==//a[contains(text(), '企业项目')]"
+新增项目: "xpath==//span[contains(text(), '新增项目')]/.."
+项目编号: "xpath==//label[contains(text(),'项目编号')]"
+项目名称: "xpath==//label[contains(text(),'项目名称')]"
+预算金额: "xpath==//label[contains(text(),'预算金额')]"
+预订知会人: "xpath==//label[contains(text(),'预订知会人')]"
+项目返回: "xpath==//span[contains(text(),'返回')]/.."
+
+项目关联设置: "xpath==//span[contains(text(), '项目关联设置')]/.."
+出差订单关联项目: "xpath==//label[contains(text(),'出差订单关联项目')]"
+关联项目返回: "class==ant-modal-close-x"
+
+
+绿色通道: "xpath==//a[contains(text(), '绿色通道')]"
+新增人员: "xpath==//span[contains(text(), '新增人员')]/.."
+取消: "xpath==//span[contains(text(), '取消')]/.."
+
+
+城市等级: "xpath==//a[contains(text(), '城市等级')]"
+等级一线城市: "xpath==//td[contains(text(),'一线城市')]"
+等级二线城市: "xpath==//td[contains(text(),'二线城市')]"
+等级三线城市: "xpath==//td[contains(text(),'三线城市')]"
+等级其他城市: "xpath==//td[contains(text(),'其他城市')]"

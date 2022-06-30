@@ -1,0 +1,65 @@
+国内酒店: "xpath==//a[contains(text(), '国内酒店')]"
+城市: "xpath==//input[@placeholder='支持中文/拼音检索']"
+深圳: "xpath==//span[contains(text(),'深圳')]"
+入住日期: "xpath==//input[@placeholder='入住日期']"
+下个月: "xpath==//*[@title='下个月 (翻页下键)']"
+入住日期选择: "xpath==//td[@title='{0}']"  # 随机生成后n天的日期
+离店日期: "xpath==//input[@placeholder='离店日期']"
+离店日期选择: "xpath==//td[@title='{0}']"  # 随机生成后n+2天的日期 -- 为完成部分退订流程
+搜索: "xpath==//hotel-search[1]/div[1]/div[1]/nz-card[1]/div[2]/nz-row[1]/button[1]"
+
+查看详情: "xpath==//span[contains(text(),'查看详情')]/.." # 可随机选取一个
+代理商A: "xpath==//li[contains(text(),'代理商A')]"
+代理商B: "xpath==//li[contains(text(),'代理商B')]"
+床型数量: "xpath==//hotel-room-list[1]/nz-row"
+可预订价格数: "xpath==//hotel-room-list[1]/nz-row[{0}]/nz-col[2]/hotel-room-rate-plan[1]/nz-row"
+退订规则1: "xpath==//hotel-room-list[1]/nz-row[{0}]/nz-col[2]/hotel-room-rate-plan[1]/nz-row[{1}]/nz-col[4]" # 有标准价标签
+预订按钮1: "xpath==//hotel-room-list[1]/nz-row[{0}]/nz-col[2]/hotel-room-rate-plan[1]/nz-row[{1}]/nz-col[7]/button[1]" # 有标准价标签
+退订规则2: "xpath==//hotel-room-list[1]/nz-row[{0}]/nz-col[2]/hotel-room-rate-plan[1]/nz-row[{1}]/nz-col[3]" # 无标准价标签
+预订按钮2: "xpath==//hotel-room-list[1]/nz-row[{0}]/nz-col[2]/hotel-room-rate-plan[1]/nz-row[{1}]/nz-col[6]/button[1]" # 无标准价标签
+
+# 填写订单页面
+姓名: "xpath==//hotel-booking[1]//th-traveler-select[1]/nz-input-group[1]/input[1]"
+感应员工信息: "tag==nz-auto-option" # 选第一个
+提交订单: "xpath==//booking-fill[1]/nz-spin[1]/div[1]/nz-row[1]/nz-col[1]/div[1]/button[1]"
+提交成功: "xpath==//span[contains(text(),'确认并支付')]"
+
+授信支付: "xpath==//nz-tabset[1]/div[1]/div[1]/div[1]/div[2]/button[1]"
+支付结果: "xpath==//div[@class='order-status ng-star-inserted']/div[1]"  # 订单已付款成功
+订单号: "xpath==//hotel-order-detail[1]//nz-card[1]/div[1]/div[2]/sv-container[1]/div[1]/sv[1]/div[2]/span[1]"
+查看订单详情: "xpath==//booking-order[1]//nz-card[1]/div[1]/div[2]/button[2]"
+订单状态: "xpath==//domestic-hotel-order-detail[1]//sv-container[1]/div[1]/sv[2]/div[2]/span[1]/span[1]"
+
+# 退订流程
+退订: "xpath==//domestic-hotel-order-detail[1]//nz-card[1]//button[2]" # 订单详情的退订按钮
+修改退订信息: "xpath==//a[contains(text(),'修改退订信息')]"
+退订日期: "tag==nz-tag" # 可随机取消一个
+下一步: "xpath==//info-comfirmation[1]/nz-row[2]/button[1]" # 全部退订
+确认下一步: "xpath==//info-comfirmation[1]/nz-row[1]/button[2]" # 部分退订
+退订原因: "xpath==//churn-reason[1]//nz-radio-group[1]/label[1]/span[1]" # 第一个原因
+退订提交: "xpath==//churn-reason[1]/nz-row[2]/button[2]"
+提交结果: "xpath==//churn-completion[1]/nz-row[1]/h3[1]" # 退订申请已提交
+
+我的特航: "xpath==//a[contains(text(), '我的特航')]"
+国内酒店订单: "xpath==//a[@href='/user/orders/domestic-hotel-orders']"
+退订按钮: "xpath==//a[contains(text(),'退订')]"  # 选第一个
+点击订单号: "xpath==//a[contains(text(),'{0}')]" # {0}替换为具体的订单号
+
+# 订单详情取消订单
+第一个订单号: "xpath==//nz-table-inner-default[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/span[2]/div[1]/div[1]/a[1]"
+取消: "xpath==//span[contains(text(), '取消')]/.."
+取消确认: "xpath==//span[contains(text(), '确定')]/.."
+提示信息: "xpath==//nz-modal-container[1]/div[1]/div[1]/div[2]/div[1]/span[1]"
+提示按钮: "xpath==//span[contains(text(), '已知晓风险')]/.."
+
+
+
+
+
+
+
+
+
+
+
+

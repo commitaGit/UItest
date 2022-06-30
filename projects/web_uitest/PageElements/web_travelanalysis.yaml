@@ -1,0 +1,25 @@
+商旅分析: "xpath==//a[contains(text(),'商旅分析')]"
+综合查询: "xpath==//span[contains(text(),'综合查询')]/.."
+国内机票: "xpath==//nz-sider[1]/div[1]/sidebar[1]/ul[1]/li[1]/div[2]/ul[1]/li[1]/a[1]"
+国内火车票: "xpath==//nz-sider[1]/div[1]/sidebar[1]/ul[1]/li[1]/div[2]/ul[1]/li[2]/a[1]"
+国内酒店: "xpath==//nz-sider[1]/div[1]/sidebar[1]/ul[1]/li[1]/div[2]/ul[1]/li[3]/a[1]"
+通用订单: "xpath==//nz-sider[1]/div[1]/sidebar[1]/ul[1]/li[1]/div[2]/ul[1]/li[4]/a[1]"
+出差申请: "xpath==//nz-sider[1]/div[1]/sidebar[1]/ul[1]/li[1]/div[2]/ul[1]/li[5]/a[1]"
+国际•港澳台机票: "xpath==//nz-sider[1]/div[1]/sidebar[1]/ul[1]/li[1]/div[2]/ul[1]/li[6]/a[1]"
+国际•港澳台酒店: "xpath==//nz-sider[1]/div[1]/sidebar[1]/ul[1]/li[1]/div[2]/ul[1]/li[7]/a[1]"
+第一行: "xpath==//tbody/tr[1]/td[2]"
+
+报表分析: "xpath==//span[contains(text(),'报表分析')]"
+国内机票报表分析: "xpath==//a[contains(text(),'国内机票报表分析')]"
+未预定最低价: "xpath==//div[contains(text(),'未预订最低价')]"
+延迟授权损失: "xpath==//div[contains(text(),'延迟授权损失')]"
+改签分析: "xpath==//div[contains(text(),'改签分析')]"
+改签原因分析: "xpath==//div[contains(text(),'改签原因分析')]"
+改签授权分析: "xpath==//div[contains(text(),'改签授权分析')]"
+退票分析: "xpath==//div[contains(text(),'退票分析')]"
+退票原因分析: "xpath==//div[contains(text(),'退票原因分析')]"
+退票授权分析: "xpath==//div[contains(text(),'退票授权分析')]"
+报表第一行: "xpath==//tbody/tr[1]"
+
+
+

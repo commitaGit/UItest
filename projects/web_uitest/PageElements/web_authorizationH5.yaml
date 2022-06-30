@@ -1,0 +1,7 @@
+同意: "xpath==//ion-button[contains(text(),'同意')]"
+拒绝: "xpath==//ion-button[contains(text(),'拒绝')]"
+确认: "xpath==//body/app-root[1]/ion-app[1]/ion-alert[1]/div[2]/div[4]/button[2]"
+取消: "xpath==//body/app-root[1]/ion-app[1]/ion-alert[1]/div[2]/div[4]/button[1]"
+授权状态: "xpath==//*[@class='ion-text-left ion-align-self-center md hydrated']/ion-label/ion-text[2]"
+订单号: "xpath==//app-auth-flight-info/ion-grid[1]/ion-row[3]/ion-col[2]/ion-label[1]"  # 授权后，查看订单状态
+

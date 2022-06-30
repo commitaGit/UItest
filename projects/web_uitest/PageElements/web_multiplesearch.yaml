@@ -1,0 +1,29 @@
+综合查询: "xpath==//a[contains(text(), '综合查询')]"
+国内机票: "xpath==//a[@href='/search/domestic-flight']"
+订单号: "name==orderNoLike"
+查询: "xpath==//span[contains(text(),'查询')]/.."
+机票订单状态: "xpath==//tbody/tr[1]/td[10]/span[2]/span[1]" # 第一个订单的订单状态
+机票订单状态二: "xpath==//tbody/tr[3]/td[10]/span[2]/span[1]" # 第二个订单的订单状态
+
+国内酒店: "xpath==//a[@href='/search/domestic-hotel-orders']"
+酒店订单号: "xpath==//input[@formcontrolname='orderNoLike']"
+国内酒店订单状态: "xpath==//tbody/tr[1]/td[8]/span[2]" # 有空格
+
+国际机票: "xpath==//a[@href='/search/intflight']"
+
+国际酒店: "xpath==//a[@href='/search/int-hotel']"
+国际酒店订单状态: "xpath==//tbody/tr[1]/td[11]/span[2]"
+国际酒店订单号: "xpath==//input[@formcontrolname='orderNoLike']"
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+Faker==8.10.0
+xlrd==1.2.0
+pytest==6.2.4
+py==1.10.0
+xlutils==2.0.0
+Appium_Python_Client==1.2.0
+PyYAML==5.4.1
+selenium==3.141.0
+pytest-assume==2.4.3
+pytest-dependency==0.5.1
+pytest-html==1.21.1
+pytest-metadata==1.8.0
+pytest-repeat==0.9.1
+pytest-rerunfailures==10.1
+pytest-sugar==0.9.4
+requests

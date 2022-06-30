@@ -1,0 +1,41 @@
+酒店: "xpath==//*[@text='酒店']/.."
+国际酒店: "xpath==//*[@text='国际·港澳台']/.."
+城市: "xpath==//android.view.View[@text='请选择城市']/parent::android.view.View"
+输入城市: "class==android.widget.EditText"
+选中城市: "xpath==//android.view.View[@resource-id='background-content']/parent::android.view.View[1]/android.view.View[2]/android.view.View[1]"
+时间: "xpath==//android.view.View[@resource-id='teh-hotel-content']/android.view.View[2]/android.view.View[1]/android.view.View[6]"
+每间人数: "xpath==//android.view.View[@resource-id='teh-hotel-content']/android.view.View[2]/android.view.View[1]/android.view.View[7]"
+确定: "xpath==//android.widget.Button[@text='确定 ']"
+查询: "xpath==//android.widget.Button[@text='查询 ']"
+
+选中酒店: "xpath==//android.view.View/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[1]" # 第一个酒店
+第一个房型: "xpath==//android.view.View/android.view.View[9]/android.view.View[1]"
+可预订数量: "xpath==//android.view.View/android.view.View[2]/android.view.View[9]/android.view.View"
+# 预订可退订的房型
+预订规则: "xpath==//android.view.View/android.view.View[9]/android.view.View[{0}]/android.view.View[3]/android.view.View[1]"
+预订按钮: "xpath==//android.view.View/android.view.View[9]/android.view.View[{0}]/android.view.View[4]/android.view.View[1]"
+# todo:若第一个房型没有可退订的房间，则会预订失败
+
+入住人: "xpath==//android.view.View[@text='请选择入住人']/parent::android.view.View[1]"
+最近选择: "xpath==//android.webkit.WebView[@text='特航商旅']/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.view.View[2]"
+搜索员工: "xpath==//android.widget.EditText"
+选中员工: "xpath==//android.webkit.WebView[@text='特航商旅']/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View[2]"
+提交订单: "xpath==//android.widget.Button[contains(@text, '提交订单')]"
+授信支付: "xpath==//android.widget.Button[contains(@text, '支付')]"
+
+支付结果: "xpath==//android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View[1]"
+查看订单: "xpath==//android.widget.Button[contains(@text, '查看订单')]"
+返回首页: "xpath==//android.widget.Button[contains(@text, '返回首页')]"
+
+退订: "xpath==//android.widget.Button[contains(@text, '退订')]"
+修改退订信息: "xpath==//android.view.View[@text='修改退订信息']"
+取消房间: "xpath==//android.view.View/android.view.View[4]" # 取消第一个房间
+下一步: "xpath==//android.widget.Button[contains(@text, '下一步')]"
+确定退订: "xpath==//android.widget.Button[contains(@text, '确定退订')]"
+确认退订: "xpath==//android.widget.Button[contains(@text, '确认退订')]"
+提交结果: "xpath==//android.webkit.WebView[@text='特航商旅']/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View[1]"
+
+
+
+
+

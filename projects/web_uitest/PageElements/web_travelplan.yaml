@@ -1,0 +1,44 @@
+差旅计划: "xpath==//a[contains(text(), '差旅计划')]"
+出差事由: "xpath==//input[@formcontrolname='travelReason']"
+出差目的地: "xpath==//input[@formcontrolname='travelDestination']"
+开始日期: "xpath==//input[@placeholder='开始日期']"
+选中开始日期: "xpath==//div[@class='ant-picker-panels']/div[2]//tbody/tr[1]/td[2]"
+选择结束日期: "xpath==//div[@class='ant-picker-panels']/div[2]//tbody/tr[2]/td[5]"
+出发地点: "xpath==//input[@formcontrolname='travelFrom']"
+交通工具: "xpath==//input[@formcontrolname='transport']"
+其他说明: "xpath==//textarea[@formcontrolname='memo']"
+姓名: "xpath==//input[@formcontrolname='name']"
+部门: "xpath==//input[@formcontrolname='department']"
+添加员工: "xpath==//span[@class='ant-form-item-children']/button"
+提交差旅计划: "xpath==//nz-col/button[1]"
+重置: "xpath==//nz-col/button[2]"
+提交状态: "xpath==//result/div[2]/div" # 提交成功则ok
+
+# 选择员工弹窗页面
+员工姓名: "xpath==//input[@name='name']"
+查询: "xpath==//nz-row[@class='ant-row']/nz-col[3]/nz-form-item/nz-form-control/div/span/button[1]"
+新增员工: "xpath==//nz-row[@class='ant-row']/nz-col[3]/nz-form-item/nz-form-control/div/span/button[2]"
+# 选择第一个员工，主要通过tr[@data-index='n']索引控制
+选择按钮: "xpath==//div[@class='ant-table-content']/div/table/tbody/tr[@data-index='0']/td[1]/span[2]/label/span[1]"
+取消: "xpath==//nz-modal-container[1]/div[1]/div[1]/div[3]/button[1]"
+
+选中员工: "xpath==//tbody/tr[1]/td[1]/span[2]/label[1]" # 选中第一个
+
+# 出差申请提交页面
+审批单号: "xpath==//div[contains(text(),'审批单号')]"
+出差事由1: "xpath==//result/div[4]/nz-row[1]/nz-col/sv-container[@title='差旅信息']/div/sv[@label='出差事由']/div[2]/span"
+出差目的地1: "xpath==//result/div[4]/nz-row[1]/nz-col/sv-container[@title='差旅信息']/div/sv[@label='出差目的地']/div[2]/span"
+起止时间: "xpath==//result/div[4]/nz-row[1]/nz-col/sv-container[@title='差旅信息']/div/sv[@label='起止时间']/div[2]/span"
+出发地点: "xpath==//result/div[4]/nz-row[1]/nz-col/sv-container[@title='差旅信息']/div/sv[@label='出发地点']/div[2]/span"
+交通工具: "xpath==//result/div[4]/nz-row[1]/nz-col/sv-container[@title='差旅信息']/div/sv[@label='交通工具']/div[2]/span"
+其他说明: "xpath==//result/div[4]/nz-row[1]/nz-col/sv-container[@title='差旅信息']/div/sv[@label='其他说明']/div[2]/span"
+# 第一个出差人，主要通过 nz-row[n] 控制
+姓名1: "xpath==//result/div[4]/nz-row[3]/nz-col[1]"
+审批单号1: "xpath==//result/div[4]/nz-row[3]/nz-col[3]"
+审批状态1: "xpath==//result/div[4]/nz-row[3]/nz-col[4]"
+# 第二个出差人
+姓名2: "xpath==//result/div[4]/nz-row[4]/nz-col[1]"
+审批单号2: "xpath==//result/div[4]/nz-row[4]/nz-col[3]"
+审批状态3: "xpath==//result/div[4]/nz-row[4]/nz-col[4]"
+继续填写差旅计划: "xpath==//result/div[5]/button[1]"
+查看我的申请: "xpath==//result/div[5]/button[2]"

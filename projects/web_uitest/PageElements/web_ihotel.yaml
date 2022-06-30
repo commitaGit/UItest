@@ -1,0 +1,61 @@
+国际酒店: "xpath==//a[contains(text(), '国际∙港澳台酒店')]"
+目的地: "xpath==//input[@placeholder='支持中英文名检索']"
+曼谷: "xpath==//span[contains(text(), '曼谷(Bangkok)')]"
+入住日期: "xpath==//input[@placeholder='请选择日期']" # 第一个
+下个月: "xpath==//*[@title='下个月 (翻页下键)']"
+入住日期选择: "xpath==//td[@title='{0}']"  # 随机生成后n天的日期
+离店日期: "xpath==//input[@placeholder='请选择日期']" # 第二个
+离店日期选择: "xpath==//td[@title='{0}']"  # 随机生成后n+2天的日期 -- 为完成部分退订流程
+搜索: "xpath==//int-hotel-search[1]/div[1]/div[1]/nz-card[1]/div[2]/div[1]/button[1]"
+
+查看详情: "xpath==//span[contains(text(),'查看详情')]/.." # 可随机选取一个
+房型数: "xpath==//int-hotel-detail[1]//nz-row[2]//nz-card[1]/div[1]/nz-card[1]/div[1]/div"
+床型数量: "xpath==//int-hotel-detail[1]//nz-row[2]//nz-card[1]/div[1]/div[{0}]/div[2]/div " # 从2开始
+退订规则: "xpath==//int-hotel-detail[1]//nz-card[1]/div[1]/nz-card[1]/div[1]/div[{0}]/div[2]/div[{1}]/div[3]"
+预订: "xpath==//int-hotel-detail[1]//nz-card[1]/div[1]/nz-card[1]/div[1]/div[{0}]/div[2]/div[{1}]/div[6]/button/span"
+
+# 填写订单页面
+姓: "xpath==//input[@placeholder='姓 Last Name']"
+感应员工信息: "xpath==//div[@class='cdk-overlay-connected-position-bounding-box']/div[1]//nz-auto-option[1]" # 选第一个
+提交订单: "xpath==//button[@class='mt-sm px-lg ant-btn ant-btn-primary ant-btn-lg']"
+继续预订: "xpath==//span[contains(text(),'继续预订')]/.."   # 国籍不符时的提示
+提交成功: "xpath==//div[contains(text(),'支付订单')]"
+
+授信支付: "xpath==//pay-center[1]/nz-spin[1]/div[1]/nz-card[1]/div[1]/nz-tabset[1]/div[1]/div[1]/div[1]/div[2]/button[1]"
+支付结果: "xpath==//div[@class='result__title']/div[1]"  #  订单已付款成功
+查看订单详情: "xpath==//span[contains(text(),'查看订单详情')]/.."
+订单号: "xpath==//inthotel-detail[1]//nz-card[1]/div[2]/nz-row[1]/sv-container[1]/div[1]/sv[1]/div[2]/span[1]"
+订单状态: "xpath==//inthotel-detail[1]//nz-card[1]/div[2]/nz-row[2]/nz-col[2]/sv-container[1]/div[1]/sv[2]/div[2]/span[1]/span[1]"
+
+# 退订流程
+我的商旅: "xpath==//a[contains(text(), '我的特航')]"
+国际酒店订单: "xpath==//a[contains(@href,'/user/orders/inthotel')]"
+退订按钮: "xpath==//a[contains(text(),'退订')]"
+修改退订信息: "xpath==//a[contains(text(),'修改退订信息')]"
+退订日期: "tag==nz-tag" # 可随机取消一个
+下一步: "xpath==//inthotel-return-confirmation[1]/div[2]/button[1]" # 全部退订
+确认下一步: "xpath==//inthotel-return-confirmation[1]/div[2]/button[2]" # 部分退订
+退订原因: "xpath==//inthotel-return-reason[1]//nz-radio-group[1]/label[1]/span[1]/input[1]" # 第一个原因
+退订提交: "xpath==//span[contains(text(),'提交')]/.."
+提交结果: "xpath==//inthotel-return-completion[1]/div[1]/h3[1]" # 退订申请已提交
+
+# 订取消订单
+第一个订单号: "xpath==//nz-table-inner-default[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/span[2]/div[1]/div[1]/a[1]" #我的商旅订单列表
+取消: "xpath==//span[contains(text(), '取消')]/.."
+取消确认: "xpath==//span[contains(text(), '确定')]/.."
+提示信息: "xpath==//nz-modal-confirm-container[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+提示确定: "xpath==//span[contains(text(), '确定')]/.."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
